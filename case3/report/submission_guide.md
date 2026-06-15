@@ -33,9 +33,17 @@
 4. **Turnitin**
    - Submit report PDF through Turnitin before final Blackboard upload
 
-## Key Numbers for Presentation
+## Fund Return Proxies (chosen scheme)
 
-- Peter: HK$4.86M balance, 35% RR, needs HK$1,703/month TVC for 60%
-- Mary: HK$1.03M balance, 11% RR, needs HK$10,482/month TVC for 60%
-- Start age effect (20 vs 40, global): 35% vs 21.3% RR
-- Fund swap effect for Mary: 11% → 21.3% RR (still below Peter)
+| Fund | Proxy | Rationale |
+|------|-------|-----------|
+| Hong Kong (Mary) | `^HSI` Hang Seng Index | Tracker Fund 2800.HK replicates HSI; full data from Dec 2000 |
+| Global (Peter) | Spliced `^GSPC` → 65%`^GSPC`+35%`EFA` → `ACWI` | No single global ETF existed 2000–2008 |
+
+Historical coverage: **307 monthly returns** from Dec 2000 to latest market data.
+
+## Key Numbers (updated)
+
+- Peter: HK$4.996M balance, 36.0% RR, needs HK$1,582/month TVC for 60%
+- Mary: HK$0.851M balance, 9.1% RR, needs HK$13,205/month TVC for 60%
+- Start age effect (20 vs 40, global): 36.0% vs 22.1% RR

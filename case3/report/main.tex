@@ -129,8 +129,8 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
     Initial monthly salary & HK\$20,000 & Case III \\
     Monthly MC (employee + employer) & HK\$2,000 & 5\% + 5\% \\
     Salary growth & HK Composite CPI & C\&SD annual YoY \\
-    Hong Kong Fund proxy & Tracker Fund 2800.HK & Historical returns \\
-    Global Fund proxy & iShares ACWI & MSCI ACWI proxy \\
+    Hong Kong Fund proxy & Hang Seng Index (\texttt{\^{}HSI}) & Tracker Fund replicates HSI \\
+    Global Fund proxy & Spliced \texttt{\^{}GSPC}/\texttt{EFA}/\texttt{ACWI} & Full history from Dec 2000 \\
     Forward return & 4\% p.a. & After latest available data \\
     Fund expense ratio & 1\% p.a. & Typical MPF range \\
     Retirement income & 4\% withdrawal rule & Annual income from balance \\
@@ -150,7 +150,7 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
     Retirement age & 65 & 65 \\
     Contribution period & 45 years & 25 years \\
     Retirement year & 2045 & 2025 \\
-    Assigned fund & Global (ACWI) & Hong Kong (2800.HK) \\
+    Assigned fund & Global (spliced) & Hong Kong (\texttt{\^{}HSI}) \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -168,17 +168,19 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
     \midrule
     Contribution years & 45.1 & 25.1 \\
     Total contributions (HK\$) & 1,443,931 & 723,931 \\
-    Investment gains (HK\$) & 3,415,445 & 307,137 \\
-    Final MPF balance (HK\$) & \textbf{4,859,376} & \textbf{1,031,068} \\
+    Investment gains (HK\$) & 3,552,431 & 126,930 \\
+    Final MPF balance (HK\$) & \textbf{4,996,362} & \textbf{850,862} \\
     Final annual salary (HK\$) & 555,156 & 374,107 \\
-    Annual retirement income (HK\$) & 194,375 & 41,243 \\
-    Monthly retirement income (HK\$) & 16,198 & 3,437 \\
-    Replacement ratio & \textbf{35.0\%} & \textbf{11.0\%} \\
+    Annual retirement income (HK\$) & 199,854 & 34,034 \\
+    Monthly retirement income (HK\$) & 16,655 & 2,836 \\
+    Replacement ratio & \textbf{36.0\%} & \textbf{9.1\%} \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Figure~\ref{fig:balance} shows Peter's balance rising steeply over 45 years, while Mary's balance grows more slowly over 25 years, ending at roughly one-fifth of Peter's balance. For Peter, investment gains (HK\$3.42 million) far exceed total contributions (HK\$1.44 million), demonstrating the power of long-horizon compounding in a DC system.
+Figure~\ref{fig:balance} shows Peter's balance rising steeply over 45 years, while Mary's balance grows more slowly over 25 years, ending at roughly one-sixth of Peter's balance. For Peter, investment gains (HK\$3.55 million) far exceed total contributions (HK\$1.44 million), demonstrating the power of long-horizon compounding in a DC system.
+
+Historical Hong Kong equity returns (via the Hang Seng Index) were volatile over Mary's 2000--2025 contribution period, including the post-2000 downturn and 2008 financial crisis, which helps explain her lower final balance relative to earlier proxy estimates.
 
 \begin{figure}[H]
   \centering
@@ -201,10 +203,10 @@ Figure~\ref{fig:balance} shows Peter's balance rising steeply over 45 years, whi
 \textbf{Disadvantages:}
 \begin{enumerate}
   \item \textbf{Investment risk:} Members bear full downside risk; Mary's Hong Kong fund underperformed the global fund over the sample period.
-  \item \textbf{Low replacement ratio:} Even Peter achieves only 35\% replacement from mandatory contributions, below the 60--70\% commonly recommended.
+  \item \textbf{Low replacement ratio:} Even Peter achieves only 36\% replacement from mandatory contributions, below the 60--70\% commonly recommended.
   \item \textbf{Fee drag:} Management fees compound negatively over 25--45 years.
   \item \textbf{No inflation guarantee:} Retirement income depends on uncertain market returns.
-  \item \textbf{Late starter penalty:} Mary's 11\% replacement ratio shows that starting at 40 cannot be fully offset by fund selection.
+  \item \textbf{Late starter penalty:} Mary's 9.1\% replacement ratio shows that starting at 40 cannot be fully offset by fund selection.
 \end{enumerate}
 
 \subsection*{4. Start Age versus Fund Choice}
@@ -219,14 +221,14 @@ Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fund
     \toprule
     Start Age & Fund & Final Balance (HK\$) & Replacement Ratio \\
     \midrule
-    20 & Global & 4,859,376 & 35.0\% \\
-    20 & Hong Kong & 2,763,879 & 19.9\% \\
-    30 & Global & 3,314,845 & 29.1\% \\
-    30 & Hong Kong & 1,750,965 & 15.4\% \\
-    40 & Global & 1,993,228 & 21.3\% \\
-    40 & Hong Kong & 1,031,068 & 11.0\% \\
-    50 & Global & 495,611 & 6.5\% \\
-    50 & Hong Kong & 407,045 & 5.4\% \\
+    20 & Global & 4,996,362 & 36.0\% \\
+    20 & Hong Kong & 2,427,886 & 17.5\% \\
+    30 & Global & 3,417,078 & 30.0\% \\
+    30 & Hong Kong & 1,500,213 & 13.2\% \\
+    40 & Global & 2,063,587 & 22.1\% \\
+    40 & Hong Kong & 850,862 & 9.1\% \\
+    50 & Global & 520,922 & 6.9\% \\
+    50 & Hong Kong & 457,617 & 6.0\% \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -239,13 +241,13 @@ Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fund
     \toprule
     Name & Assigned RR & Swapped RR & Change (pp) \\
     \midrule
-    Peter (age 20) & 35.0\% & 19.9\% & $-15.1$ \\
-    Mary (age 40) & 11.0\% & 21.3\% & $+10.3$ \\
+    Peter (age 20) & 36.0\% & 17.5\% & $-18.5$ \\
+    Mary (age 40) & 9.1\% & 22.1\% & $+13.0$ \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-\textbf{Key finding:} Comparing start ages at the same fund shows a \textbf{24 percentage-point gap} (35\% versus 11\% for global funds at ages 20 and 40). Peter at age 20 with the underperforming Hong Kong fund (19.9\%) still ends with a far higher balance than Mary. \textbf{Contribution horizon dominates fund selection.}
+\textbf{Key finding:} Comparing start ages at the same fund shows a \textbf{27 percentage-point gap} (36\% versus 9.1\% for global and Hong Kong funds at ages 20 and 40). Peter at age 20 with the underperforming Hong Kong fund (17.5\%) still ends with a far higher balance than Mary. \textbf{Contribution horizon dominates fund selection.}
 
 \begin{figure}[H]
   \centering
@@ -268,10 +270,10 @@ Salaries and mandatory contributions are indexed to CPI, but real purchasing pow
     \toprule
     Member & Current RR & Target RR & Extra Monthly TVC (HK\$) \\
     \midrule
-    Peter & 35.0\% & 60\% & 1,703 \\
-    Peter & 35.0\% & 70\% & 2,384 \\
-    Mary & 11.0\% & 60\% & 10,482 \\
-    Mary & 11.0\% & 70\% & 12,623 \\
+    Peter & 36.0\% & 60\% & 1,582 \\
+    Peter & 36.0\% & 70\% & 2,242 \\
+    Mary & 9.1\% & 60\% & 13,205 \\
+    Mary & 9.1\% & 70\% & 15,799 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -283,7 +285,7 @@ Salaries and mandatory contributions are indexed to CPI, but real purchasing pow
   \label{fig:tvc}
 \end{figure}
 
-Mary urgently needs substantial TVC or other income sources. Peter still requires about HK\$1,700 per month extra to reach 60\% replacement, achievable within the TVC tax-deductible limit if planned annually.
+Mary urgently needs substantial TVC or other income sources. Peter still requires about HK\$1,600 per month extra to reach 60\% replacement, achievable within the TVC tax-deductible limit if planned annually.
 
 \section*{(c) Supporting Retirement Under DC with the Social Security System}
 
@@ -311,12 +313,12 @@ Eligible Hong Kong residents aged 65+ may receive Normal OALA (HK\$2,065/month) 
     \toprule
     Member & Scenario & MPF & OALA & Total & Combined RR \\
     \midrule
-    Peter & No OALA & 16,198 & 0 & 16,198 & 35.0\% \\
-    Peter & Normal OALA & 16,198 & 2,065 & 18,263 & 39.5\% \\
-    Peter & Higher OALA & 16,198 & 4,185 & 20,383 & 44.1\% \\
-    Mary & No OALA & 3,437 & 0 & 3,437 & 11.0\% \\
-    Mary & Normal OALA & 3,437 & 2,065 & 5,502 & 17.6\% \\
-    Mary & Higher OALA & 3,437 & 4,185 & 7,622 & 24.4\% \\
+    Peter & No OALA & 16,655 & 0 & 16,655 & 36.0\% \\
+    Peter & Normal OALA & 16,655 & 2,065 & 18,720 & 40.5\% \\
+    Peter & Higher OALA & 16,655 & 4,185 & 20,840 & 45.0\% \\
+    Mary & No OALA & 2,836 & 0 & 2,836 & 9.1\% \\
+    Mary & Normal OALA & 2,836 & 2,065 & 4,901 & 15.7\% \\
+    Mary & Higher OALA & 2,836 & 4,185 & 7,021 & 22.5\% \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -332,21 +334,21 @@ Eligible Hong Kong residents aged 65+ may receive Normal OALA (HK\$2,065/month) 
 
 \textbf{Peter (retirement 2045):}
 \begin{itemize}
-  \item MPF provides a solid base (35\% replacement ratio).
-  \item Add TVC of about HK\$1,700 per month to reach 60\% replacement from MPF alone.
+  \item MPF provides a solid base (36\% replacement ratio).
+  \item Add TVC of about HK\$1,600 per month to reach 60\% replacement from MPF alone.
   \item OALA is unlikely given expected asset levels; the plan should not rely on it.
   \item Consider MPF annuitisation for longevity protection.
 \end{itemize}
 
 \textbf{Mary (retirement 2025):}
 \begin{itemize}
-  \item Mandatory MPF alone is severely inadequate (11\% replacement ratio).
-  \item Higher OALA (combined RR 24.4\%) still leaves a large gap to 60\%.
+  \item Mandatory MPF alone is severely inadequate (9.1\% replacement ratio).
+  \item Higher OALA (combined RR 22.5\%) still leaves a large gap to 60\%.
   \item Begin TVC as early as possible; consider working beyond 65.
   \item Build third-pillar savings given limited compounding time.
 \end{itemize}
 
-A realistic mixed plan for Mary---MPF (HK\$3,437) plus Higher OALA (HK\$4,185) plus part-time work or savings (HK\$5,000)---yields about HK\$12,622 per month, still below the 60\% target of HK\$18,706.
+A realistic mixed plan for Mary---MPF (HK\$2,836) plus Higher OALA (HK\$4,185) plus part-time work or savings (HK\$5,000)---yields about HK\$11,021 per month, still below the 60\% target of HK\$18,706.
 
 \subsection*{5. Conclusions on Extra Contributions}
 
@@ -358,7 +360,7 @@ A realistic mixed plan for Mary---MPF (HK\$3,437) plus Higher OALA (HK\$4,185) p
     \toprule
     Question & Peter & Mary \\
     \midrule
-    Is mandatory MPF sufficient? & No (35\%) & No (11\%) \\
+    Is mandatory MPF sufficient? & No (36\%) & No (9.1\%) \\
     Should they add TVC? & Yes, moderate & Yes, urgent \\
     Can social security fill the gap? & Unlikely & Partially only \\
     \bottomrule

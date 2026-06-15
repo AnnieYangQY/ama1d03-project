@@ -1,9 +1,15 @@
 {
   "cpi_months": 541,
-  "hong_kong_months": 221,
-  "global_months": 219,
-  "hong_kong_ticker": "2800.HK",
-  "global_ticker": "ACWI",
+  "hong_kong_months": 307,
+  "global_months": 307,
+  "hong_kong_proxy": "^HSI (Hang Seng Index)",
+  "hong_kong_rationale": "Tracker Fund 2800.HK replicates HSI; complete history from Dec 2000",
+  "global_proxy": "Spliced: ^GSPC -> 65%^GSPC+35%EFA -> ACWI",
+  "global_splice": {
+    "2000-12_to_2001-08": "^GSPC",
+    "2001-09_to_2008-03": "65% ^GSPC + 35% EFA",
+    "2008-04_onwards": "ACWI"
+  },
   "cpi_source": "C&SD Composite CPI YoY (annual), converted to monthly",
-  "note": "ACWI used as Global Fund proxy; 2800.HK as Hong Kong Fund proxy."
+  "historical_coverage": "Dec 2000 to latest available market data"
 }

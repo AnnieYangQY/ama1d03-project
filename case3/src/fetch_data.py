@@ -61,6 +61,13 @@ HK_CPI_ANNUAL = {
     2045: 2.0,
 }
 
+# Global fund splice weights (developed US + developed ex-US before ACWI existed)
+GLOBAL_US_WEIGHT = 0.65
+GLOBAL_EFA_WEIGHT = 0.35
+GLOBAL_BLEND_START = pd.Timestamp("2001-09-01")
+GLOBAL_ACWI_START = pd.Timestamp("2008-04-01")
+SIM_START = pd.Timestamp("2000-12-01")
+
 
 def build_cpi_series(start: str = "2000-12-01", end: str = "2045-12-01") -> pd.DataFrame:
     """Build monthly CPI index from annual YoY inflation rates."""
@@ -88,48 +95,87 @@ def build_cpi_series(start: str = "2000-12-01", end: str = "2045-12-01") -> pd.D
     return df
 
 
-def fetch_etf_returns(
-    ticker: str,
-    label: str,
-    start: str = "2000-11-01",
-    end: str = "2045-12-31",
-) -> pd.DataFrame:
-    """Download adjusted close prices and compute monthly returns."""
+def _download_close(ticker: str, start: str, end: str) -> pd.Series:
     data = yf.download(ticker, start=start, end=end, progress=False, auto_adjust=True)
     if data.empty:
         raise RuntimeError(f"No data returned for {ticker}")
-
     if isinstance(data.columns, pd.MultiIndex):
-        price = data["Close"].iloc[:, 0]
-    else:
-        price = data["Close"]
+        return data["Close"].iloc[:, 0].dropna()
+    return data["Close"].dropna()
 
+
+def _monthly_returns(price: pd.Series) -> pd.Series:
     monthly = price.resample("MS").last().dropna()
-    returns = monthly.pct_change().dropna()
-    out = pd.DataFrame({"date": returns.index, "monthly_return": returns.values})
-    out["fund"] = label
-    out.to_csv(DATA_DIR / f"{label}_monthly_returns.csv", index=False)
+    return monthly.pct_change().dropna()
+
+
+def build_hong_kong_returns(end: str = "2046-01-01") -> pd.DataFrame:
+    """Hong Kong Fund proxy: Hang Seng Index (^HSI).
+
+    Tracker Fund (2800.HK) referenced in the case replicates the Hang Seng Index.
+    ^HSI has complete daily history from MPF launch, avoiding Yahoo gaps for 2800.HK.
+    """
+    price = _download_close("^HSI", start="2000-11-01", end=end)
+    returns = _monthly_returns(price)
+    returns = returns[returns.index >= SIM_START]
+    out = pd.DataFrame({"date": returns.index, "monthly_return": returns.values, "fund": "hong_kong"})
+    out.to_csv(DATA_DIR / "hong_kong_monthly_returns.csv", index=False)
+    return out
+
+
+def build_global_returns(end: str = "2046-01-01") -> pd.DataFrame:
+    """Global Fund proxy: spliced market indices with full history from Dec 2000.
+
+    - Dec 2000 -- Aug 2001: S&P 500 (^GSPC), US developed market proxy
+    - Sep 2001 -- Mar 2008: 65% ^GSPC + 35% EFA (developed ex-US)
+    - Apr 2008 -- present: ACWI (broad global equity ETF)
+    """
+    gspc = _monthly_returns(_download_close("^GSPC", start="2000-11-01", end=end))
+    efa = _monthly_returns(_download_close("EFA", start="2000-11-01", end=end))
+    acwi = _monthly_returns(_download_close("ACWI", start="2008-01-01", end=end))
+
+    months = pd.date_range(SIM_START, pd.Timestamp(end) - pd.offsets.MonthBegin(1), freq="MS")
+    records: list[dict] = []
+
+    for dt in months:
+        if dt >= GLOBAL_ACWI_START and dt in acwi.index:
+            ret = float(acwi.loc[dt])
+            source = "ACWI"
+        elif dt >= GLOBAL_BLEND_START and dt in gspc.index and dt in efa.index:
+            ret = GLOBAL_US_WEIGHT * float(gspc.loc[dt]) + GLOBAL_EFA_WEIGHT * float(efa.loc[dt])
+            source = "GSPC+EFA"
+        elif dt in gspc.index:
+            ret = float(gspc.loc[dt])
+            source = "GSPC"
+        else:
+            continue
+        records.append({"date": dt, "monthly_return": ret, "fund": "global", "source": source})
+
+    out = pd.DataFrame(records)
+    out.to_csv(DATA_DIR / "global_monthly_returns.csv", index=False)
     return out
 
 
 def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     cpi = build_cpi_series()
-    hk = fetch_etf_returns("2800.HK", "hong_kong")
-    # URTH tracks MSCI World; available from 2012. Use ACWI for longer history.
-    try:
-        global_fund = fetch_etf_returns("ACWI", "global")
-    except RuntimeError:
-        global_fund = fetch_etf_returns("URTH", "global")
+    hk = build_hong_kong_returns()
+    global_fund = build_global_returns()
 
     summary = {
         "cpi_months": len(cpi),
         "hong_kong_months": len(hk),
         "global_months": len(global_fund),
-        "hong_kong_ticker": "2800.HK",
-        "global_ticker": "ACWI",
+        "hong_kong_proxy": "^HSI (Hang Seng Index)",
+        "hong_kong_rationale": "Tracker Fund 2800.HK replicates HSI; complete history from Dec 2000",
+        "global_proxy": "Spliced: ^GSPC -> 65%^GSPC+35%EFA -> ACWI",
+        "global_splice": {
+            "2000-12_to_2001-08": "^GSPC",
+            "2001-09_to_2008-03": "65% ^GSPC + 35% EFA",
+            "2008-04_onwards": "ACWI",
+        },
         "cpi_source": "C&SD Composite CPI YoY (annual), converted to monthly",
-        "note": "ACWI used as Global Fund proxy; 2800.HK as Hong Kong Fund proxy.",
+        "historical_coverage": "Dec 2000 to latest available market data",
     }
     (DATA_DIR / "data_summary.json").write_text(json.dumps(summary, indent=2))
     print(json.dumps(summary, indent=2))

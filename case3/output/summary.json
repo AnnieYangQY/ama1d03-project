@@ -7,13 +7,13 @@
       "retirement_date": "2045-12",
       "contribution_years": 45.1,
       "total_contributions": 1443931.0,
-      "final_balance": 4859376.0,
-      "total_investment_gain": 3415445.0,
+      "final_balance": 4996362.0,
+      "total_investment_gain": 3552431.0,
       "final_annual_salary": 555156.0,
-      "annual_retirement_income": 194375.0,
-      "monthly_retirement_income": 16198.0,
-      "replacement_ratio": 0.3501,
-      "replacement_ratio_pct": 35.0
+      "annual_retirement_income": 199854.0,
+      "monthly_retirement_income": 16655.0,
+      "replacement_ratio": 0.36,
+      "replacement_ratio_pct": 36.0
     },
     {
       "name": "Mary",
@@ -22,21 +22,21 @@
       "retirement_date": "2025-12",
       "contribution_years": 25.1,
       "total_contributions": 723931.0,
-      "final_balance": 1031068.0,
-      "total_investment_gain": 307137.0,
+      "final_balance": 850862.0,
+      "total_investment_gain": 126930.0,
       "final_annual_salary": 374107.0,
-      "annual_retirement_income": 41243.0,
-      "monthly_retirement_income": 3437.0,
-      "replacement_ratio": 0.1102,
-      "replacement_ratio_pct": 11.0
+      "annual_retirement_income": 34034.0,
+      "monthly_retirement_income": 2836.0,
+      "replacement_ratio": 0.091,
+      "replacement_ratio_pct": 9.1
     }
   ],
   "tvc_gap_analysis": [
     {
       "name": "Peter",
       "target_replacement_ratio_pct": 60.0,
-      "current_replacement_ratio_pct": 35.0,
-      "required_extra_monthly_contribution": 1703.0,
+      "current_replacement_ratio_pct": 36.0,
+      "required_extra_monthly_contribution": 1582.0,
       "achievable": true,
       "balance_with_extra": 8327345.0,
       "replacement_ratio_with_extra_pct": 60.0
@@ -44,8 +44,8 @@
     {
       "name": "Peter",
       "target_replacement_ratio_pct": 70.0,
-      "current_replacement_ratio_pct": 35.0,
-      "required_extra_monthly_contribution": 2384.0,
+      "current_replacement_ratio_pct": 36.0,
+      "required_extra_monthly_contribution": 2242.0,
       "achievable": true,
       "balance_with_extra": 9715236.0,
       "replacement_ratio_with_extra_pct": 70.0
@@ -53,8 +53,8 @@
     {
       "name": "Mary",
       "target_replacement_ratio_pct": 60.0,
-      "current_replacement_ratio_pct": 11.0,
-      "required_extra_monthly_contribution": 10482.0,
+      "current_replacement_ratio_pct": 9.1,
+      "required_extra_monthly_contribution": 13205.0,
       "achievable": true,
       "balance_with_extra": 5611610.0,
       "replacement_ratio_with_extra_pct": 60.0
@@ -62,8 +62,8 @@
     {
       "name": "Mary",
       "target_replacement_ratio_pct": 70.0,
-      "current_replacement_ratio_pct": 11.0,
-      "required_extra_monthly_contribution": 12623.0,
+      "current_replacement_ratio_pct": 9.1,
+      "required_extra_monthly_contribution": 15799.0,
       "achievable": true,
       "balance_with_extra": 6546879.0,
       "replacement_ratio_with_extra_pct": 70.0
@@ -73,20 +73,20 @@
     {
       "name": "Peter",
       "assigned_fund": "global",
-      "balance_assigned": 4859376.0,
-      "balance_swapped": 2763879.0,
-      "rr_assigned_pct": 35.0,
-      "rr_swapped_pct": 19.9,
-      "fund_effect": -2095498.0
+      "balance_assigned": 4996362.0,
+      "balance_swapped": 2427886.0,
+      "rr_assigned_pct": 36.0,
+      "rr_swapped_pct": 17.5,
+      "fund_effect": -2568475.0
     },
     {
       "name": "Mary",
       "assigned_fund": "hong_kong",
-      "balance_assigned": 1031068.0,
-      "balance_swapped": 1993228.0,
-      "rr_assigned_pct": 11.0,
-      "rr_swapped_pct": 21.3,
-      "fund_effect": 962161.0
+      "balance_assigned": 850862.0,
+      "balance_swapped": 2063587.0,
+      "rr_assigned_pct": 9.1,
+      "rr_swapped_pct": 22.1,
+      "fund_effect": 1212725.0
     }
   ]
 }
