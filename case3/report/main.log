@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  15 JUN 2026 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  15 JUN 2026 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -430,52 +430,48 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/Users/yangqiyuan/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 54.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 53.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (5.20044pt too wide) in paragraph at lines 54--55
-\T1/ptm/m/n/12 Liv-ing Al-lowance (OALA, for lower-income se-niors), and Old Age Al-lowance (OAA, broader
- []
-
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 68.
-(/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 67.
+ (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 68.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 67.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 68.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 67.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 68.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 67.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 68.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 67.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/ptm/m/n/12 Master Trust
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/ptm/m/n/12 Employer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 \T1/ptm/m/n/12 sponsored
  []
 
@@ -483,73 +479,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--73
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 
-      [1]
-Overfull \hbox (21.74757pt too wide) in paragraph at lines 94--95
-[]\T1/ptm/b/n/12 Tax De-ductible Vol-un-tary Con-tri-bu-tions (TVC): \T1/ptm/m/n/12 sep-a-rate per-sonal ac-counts; up to \T1/ptm/b/n/12 HK$60,000
+l.84   \item E
+              mployee and employer each contribute \textbf{5\%} of relevant ... [1] [2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+
+Overfull \hbox (12.72755pt too wide) in paragraph at lines 133--149
+ [][] 
  []
 
-[2]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
- [3{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<../output/fig1_balance_over_age.png, id=36, 642.4pt x 353.7215pt>
+[3{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+<../output/fig1_balance_over_age.png, id=37, 642.4pt x 353.7215pt>
 File: ../output/fig1_balance_over_age.png Graphic file (type png)
 <use ../output/fig1_balance_over_age.png>
-Package pdftex.def Info: ../output/fig1_balance_over_age.png  used on input line 198.
+Package pdftex.def Info: ../output/fig1_balance_over_age.png  used on input line 197.
 (pdftex.def)             Requested size: 432.17375pt x 237.96909pt.
- [4]
-Overfull \hbox (0.8198pt too wide) in paragraph at lines 207--208
-[]\T1/ptm/b/n/12 Clear prop-erty rights and porta-bil-ity: \T1/ptm/m/n/12 In-di-vid-ual ac-counts suit Hong Kong's mo-bile labour
- []
-
-[5 <../output/fig1_balance_over_age.png>]
+ [4] [5 <../output/fig1_balance_over_age.png>]
 <../output/fig3_start_age_sensitivity.png, id=63, 642.8015pt x 353.7215pt>
 File: ../output/fig3_start_age_sensitivity.png Graphic file (type png)
 <use ../output/fig3_start_age_sensitivity.png>
-Package pdftex.def Info: ../output/fig3_start_age_sensitivity.png  used on input line 265.
+Package pdftex.def Info: ../output/fig3_start_age_sensitivity.png  used on input line 264.
 (pdftex.def)             Requested size: 432.17375pt x 237.82335pt.
  [6]
-Overfull \hbox (12.18855pt too wide) in paragraph at lines 272--273
-\T1/ptm/m/n/12 ble [][]4[][] ($\OT1/ztmcm/m/n/12 60% \OMS/ztmcm/m/n/12 ^^B [] ^^@ []$\T1/ptm/m/n/12 ): Pe-ter's gap is ap-prox-i-mately HK$11,103;
- []
-
 <../output/fig4_tvc_marginal_effect.png, id=78, 642.8015pt x 353.32pt>
 File: ../output/fig4_tvc_marginal_effect.png Graphic file (type png)
 <use ../output/fig4_tvc_marginal_effect.png>
-Package pdftex.def Info: ../output/fig4_tvc_marginal_effect.png  used on input line 294.
+Package pdftex.def Info: ../output/fig4_tvc_marginal_effect.png  used on input line 293.
 (pdftex.def)             Requested size: 432.17375pt x 237.55342pt.
-[7 <../output/fig3_start_age_sensitivity.png>]
-Overfull \hbox (15.34082pt too wide) in paragraph at lines 299--300
-\T1/ptm/m/n/12 limit (HK$60,000/year $\OMS/ztmcm/m/n/12 ^^Y$ \T1/ptm/m/n/12 HK$5,000/month). By con-trast, Mary's re-quired TVC of HK$13,205/month
- []
-
-[8 <../output/fig4_tvc_marginal_effect.png>]
+ [7 <../output/fig3_start_age_sensitivity.png>] [8 <../output/fig4_tvc_marginal_effect.png>]
 <../output/fig2_income_breakdown.png, id=97, 570.13pt x 353.7215pt>
 File: ../output/fig2_income_breakdown.png Graphic file (type png)
 <use ../output/fig2_income_breakdown.png>
-Package pdftex.def Info: ../output/fig2_income_breakdown.png  used on input line 356.
+Package pdftex.def Info: ../output/fig2_income_breakdown.png  used on input line 355.
 (pdftex.def)             Requested size: 366.40834pt x 227.32552pt.
- [9] [10 <../output/fig2_income_breakdown.png>]
-Overfull \hbox (37.20291pt too wide) in paragraph at lines 413--414
-\T1/ptm/m/n/12 Hong Kong's DC sys-tem shifts re-tire-ment re-spon-si-bil-ity to the in-di-vid-ual. Early, con-sis-tent contributions---
- []
-
-[11]
-Underfull \hbox (badness 1205) in paragraph at lines 457--458
-[]\T1/ptm/m/n/12 Investopedia, \T1/ptm/m/it/12 In-di-vid-ual Re-tire-ment Ac-count (IRA)\T1/ptm/m/n/12 , [][]$\T1/cmtt/m/n/12 https : / / www . investopedia . com /
- []
-
-[12]
-Overfull \hbox (64.43582pt too wide) in paragraph at lines 470--471
-[]\T1/ptm/m/n/12 Output files are stored in \T1/cmtt/m/n/12 case3/output/\T1/ptm/m/n/12 . As-sump-tions are doc-u-mented in \T1/cmtt/m/n/12 case3/data/assumptions.md\T1/ptm/m/n/12 . 
- []
-
-[13] (./main.aux)
+ [9] [10 <../output/fig2_income_breakdown.png>] [11] [12] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -558,18 +525,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14534 strings out of 469339
- 280429 string characters out of 5465690
- 672654 words of memory out of 5000000
- 43118 multiletter control sequences out of 15000+600000
- 683377 words of font info for 119 fonts, out of 8000000 for 9000
+ 14528 strings out of 469339
+ 280327 string characters out of 5465690
+ 670663 words of memory out of 5000000
+ 43114 multiletter control sequences out of 15000+600000
+ 680089 words of font info for 117 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,10n,79p,526b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,496b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 403627 bytes).
+Output written on main.pdf (13 pages, 401222 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 73 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
