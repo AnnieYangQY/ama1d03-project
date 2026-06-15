@@ -157,6 +157,8 @@ Peter's balance rises steadily over 45 years. Mary's balance over 25 years ends 
   \item Mary's 9.1\% ratio shows that starting at 40 cannot be fixed by fund choice alone.
 \end{enumerate}
 
+Near retirement, members may adjust fund allocation: Peter can shift from global equity toward bonds and capital-preservation funds after age 55; Mary may move from Hong Kong equity toward mixed-asset funds to reduce volatility. Part~(c) builds on these balances and examines how MPF can be combined with OALA.
+
 \subsection*{4. Start Age versus Fund Choice}
 
 Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fundswap} shows fund-swap sensitivity. Figure~\ref{fig:age} plots the results.
@@ -233,40 +235,25 @@ Peter needs about HK\$1,600 per month of \textbf{TVC} (tax-deductible voluntary 
 
 \subsection*{1. Three Pillars and OALA}
 
-Unlike Canada's CPP or US Social Security, Hong Kong has no universal earnings-related pension. For middle-income workers like Peter and Mary, first-pillar benefits are largely unavailable once MPF balances count toward the asset test.
+Part~(c) asks how DC retirees combine MPF with first-pillar OALA. OALA pays Normal allowance of HK\$2,065 or Higher allowance of HK\$4,185 per month in 2025/26, subject to income and asset tests. For a single person, assessable assets are capped at about HK\$401,000 and monthly assessable income at about HK\$10,700 for Higher OALA.
 
-OALA pays Normal allowance of HK\$2,065 or Higher allowance of HK\$4,185 per month in 2025/26, subject to income and asset tests. For a single person, the asset limit is about HK\$401,000. \textbf{Unwithdrawn MPF counts as assets.} The more a member saves in DC, the less likely they receive OALA.
+\textbf{Unwithdrawn MPF counts as assets.} To use OALA alongside MPF, retirees may need to \textbf{structure benefits at age 65}. We assume \textbf{Mary annuitises her MPF} through the MPF platform so benefits are taken as a pension stream rather than a retained lump sum, keeping assessable liquid assets below the cap. Her MPF pension of HK\$2,836 per month is below the income limit, so she qualifies for \textbf{Higher OALA of HK\$4,185}. \textbf{Peter} has a balance of HK\$4.99 million and MPF drawdown of HK\$16,655 per month, so he fails both the asset and income tests and receives no OALA.
 
 \subsection*{2. Combined Retirement Income}
 
-Table~\ref{tab:income} shows actual eligibility. Both Peter and Mary exceed the asset limit and receive no OALA. Table~\ref{tab:income_hyp} gives hypothetical figures only if MPF were excluded from assets, which does not apply to Case III.
+Table~\ref{tab:income} reports the integrated Part~(c) plan: MPF pension income plus OALA where eligible. Figure~\ref{fig:income} compares the two members.
 
 \begin{table}[H]
   \centering
-  \caption{Retirement income after OALA asset test}
+  \caption{MPF plus OALA retirement income (Part c)}
   \label{tab:income}
   \small
   \begin{tabular}{@{}lrrrr@{}}
     \toprule
-    Member & MPF balance & MPF income & OALA & Combined RR \\
+    Member & MPF income & OALA & Total & Combined RR \\
     \midrule
-    Peter & 4,996,362 & 16,655 & 0 & 36.0\% \\
-    Mary & 850,862 & 2,836 & 0 & 9.1\% \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{table}[H]
-  \centering
-  \caption{Hypothetical OALA if MPF excluded, not applicable to Case III}
-  \label{tab:income_hyp}
-  \small
-  \begin{tabular}{@{}llrrr@{}}
-    \toprule
-    Member & Scenario & MPF & OALA & Combined RR \\
-    \midrule
-    Peter & Higher OALA & 16,655 & 4,185 & 45.0\% \\
-    Mary & Higher OALA & 2,836 & 4,185 & 22.5\% \\
+    Peter & 16,655 & 0 & 16,655 & 36.0\% \\
+    Mary & 2,836 & 4,185 & 7,021 & 22.5\% \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -274,7 +261,7 @@ Table~\ref{tab:income} shows actual eligibility. Both Peter and Mary exceed the 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.72\textwidth]{../output/fig2_income_breakdown.png}
-  \caption{Actual retirement income from MPF only}
+  \caption{Retirement income: MPF plus OALA}
   \label{fig:income}
 \end{figure}
 
@@ -290,9 +277,9 @@ Table~\ref{tab:income} shows actual eligibility. Both Peter and Mary exceed the 
 
 \textbf{Mary, retiring in 2025:}
 \begin{itemize}
-  \item Mandatory MPF leaves her at 9.1\%; OALA is unavailable given her HK\$851,000 balance.
-  \item Delaying retirement to 70 raises RR only to 10.9\% (Table~\ref{tab:delay}).
-  \item She needs third-pillar savings and possibly part-time work; TVC alone is not realistic.
+  \item \textbf{Annuitise MPF at 65} and apply for \textbf{Higher OALA} to raise combined income to HK\$7,021 per month, 22.5\% replacement.
+  \item OALA helps but the gap to 60\% remains large; add TVC where affordable and third-pillar savings or part-time work.
+  \item Delaying retirement to 70 raises MPF-only RR only to 10.9\% (Table~\ref{tab:delay}).
 \end{itemize}
 
 \begin{table}[H]
@@ -311,7 +298,7 @@ Table~\ref{tab:income} shows actual eligibility. Both Peter and Mary exceed the 
   \end{tabular}
 \end{table}
 
-A mixed plan for Mary of MPF income plus about HK\$5,000/month from other sources gives roughly HK\$7,836/month, still below the 60\% target of HK\$18,706.
+A mixed plan for Mary of MPF plus Higher OALA plus about HK\$5,000 per month from other sources gives roughly HK\$12,021 per month, still below the 60\% target of HK\$18,706.
 
 \begin{table}[H]
   \centering
@@ -324,7 +311,7 @@ A mixed plan for Mary of MPF income plus about HK\$5,000/month from other source
     \midrule
     Mandatory MPF sufficient? & No, 36\% & No, 9.1\% \\
     Add TVC? & Yes, moderate & Yes, urgent \\
-    Social security fills gap? & No, asset test & No, asset test \\
+    Social security fills gap? & No, asset test & Partially, OALA \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -333,7 +320,7 @@ A mixed plan for Mary of MPF income plus about HK\$5,000/month from other source
 \begin{enumerate}
   \item Mandatory MPF alone cannot maintain pre-retirement living standards.
   \item \textbf{When contributions begin} matters more than fund choice.
-  \item The first pillar is a floor for low-asset retirees, not a supplement for the middle class.
+  \item OALA can supplement MPF for members like Mary who structure benefits to meet the tests; high-balance members like Peter rely on MPF and voluntary savings instead.
   \item A complete plan combines MPF, TVC within tax limits, third-pillar savings, lifecycle de-risking, and partial annuitisation.
 \end{enumerate}
 

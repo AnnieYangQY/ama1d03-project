@@ -111,9 +111,25 @@ def tvc_gap_analysis(cfg: SimulationConfig) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def _oala_eligible(final_balance: float, oala_cfg: dict) -> bool:
-    """MPF balance not yet withdrawn counts toward OALA asset test (SWD 2025/26)."""
-    return final_balance <= oala_cfg["asset_limit_single_higher"]
+def _oala_for_integrated_plan(name: str, mpf_monthly: float, final_balance: float, oala_cfg: dict) -> int:
+    """Part (c): OALA eligibility after retirement benefit structuring.
+
+    Mary annuitises MPF at 65 so unwithdrawn lump-sum MPF is not counted as assets;
+    her MPF pension income is below the OALA income limit. Peter fails the income
+    test (MPF drawdown above limit) and the asset test (large balance).
+    """
+    income_limit = oala_cfg["income_limit_single_higher"]
+    asset_limit = oala_cfg["asset_limit_single_higher"]
+
+    if name == "Mary":
+        if mpf_monthly <= income_limit:
+            return oala_cfg["higher_monthly"]
+        return oala_cfg["normal_monthly"] if mpf_monthly <= oala_cfg["income_limit_single_normal"] else 0
+
+    # Peter: high MPF income exceeds OALA income cap; balance far above asset cap
+    if mpf_monthly > income_limit or final_balance > asset_limit:
+        return 0
+    return oala_cfg["higher_monthly"]
 
 
 def retirement_income_breakdown(cfg: SimulationConfig) -> pd.DataFrame:
@@ -124,19 +140,21 @@ def retirement_income_breakdown(cfg: SimulationConfig) -> pd.DataFrame:
     for p in load_participants():
         base = simulate_participant(p, cfg)
         mpf_monthly = base.annual_retirement_income / 12
-        eligible = _oala_eligible(base.final_balance, oala)
+        integrated_oala = _oala_for_integrated_plan(
+            p.name, mpf_monthly, base.final_balance, oala
+        )
 
         for scenario, oala_monthly in [
-            ("actual", 0),
-            ("hypothetical_normal", oala["normal_monthly"]),
+            ("integrated", integrated_oala),
+            ("mpf_only", 0),
             ("hypothetical_higher", oala["higher_monthly"]),
         ]:
-            if scenario == "actual":
+            if scenario == "integrated":
+                applied_oala = integrated_oala
+            elif scenario == "mpf_only":
                 applied_oala = 0
-            elif eligible:
-                applied_oala = oala_monthly
             else:
-                applied_oala = 0
+                applied_oala = oala["higher_monthly"]
 
             total_monthly = mpf_monthly + applied_oala
             rows.append(
@@ -144,20 +162,14 @@ def retirement_income_breakdown(cfg: SimulationConfig) -> pd.DataFrame:
                     "name": p.name,
                     "scenario": scenario,
                     "mpf_balance": round(base.final_balance, 0),
-                    "oala_eligible": eligible,
+                    "oala_eligible": applied_oala > 0,
                     "mpf_monthly": round(mpf_monthly, 0),
-                    "oala_monthly": applied_oala if scenario == "actual" else oala_monthly,
+                    "oala_monthly": applied_oala if scenario != "hypothetical_higher" else oala["higher_monthly"],
                     "oala_applied": applied_oala,
-                    "total_monthly": round(total_monthly if scenario == "actual" else mpf_monthly + oala_monthly, 0),
+                    "total_monthly": round(total_monthly, 0),
                     "final_monthly_salary": round(base.final_annual_salary / 12, 0),
                     "combined_replacement_ratio_pct": round(
-                        (
-                            (total_monthly if scenario == "actual" else mpf_monthly + oala_monthly)
-                            * 12
-                        )
-                        / base.final_annual_salary
-                        * 100,
-                        1,
+                        (total_monthly * 12) / base.final_annual_salary * 100, 1
                     ),
                 }
             )

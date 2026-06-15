@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.19)  15 JUN 2026 16:11
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.19)  15 JUN 2026 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,7 +850,7 @@ File: ../output/fig1_balance_over_age.png Graphic file (type bmp)
 File: ../output/fig3_start_age_sensitivity.png Graphic file (type bmp)
 <../output/fig3_start_age_sensitivity.png>
  [4]
-Overfull \hbox (1.88635pt too wide) in paragraph at lines 231--232
+Overfull \hbox (1.88635pt too wide) in paragraph at lines 233--234
 []\TU/TimesNewRoman(0)/m/n/12 Peter \TU/SongtiSC(0)/m/n/12 须 每 月 通 过 \TU/TimesNewRoman(0)/b/n/12 TVC |\TU/SongtiSC(0)/b/n/12 （可 扣 税 自 愿 供 款）|  \TU/SongtiSC(0)/m/n/12 多 供 约 \TU/TimesNewRoman(0)/m/n/12 HK$1,600 \TU/SongtiSC(0)/m/n/12 可 达 \TU/TimesNewRoman(0)/m/n/12 60%\TU/SongtiSC(0)/m/n/12 ，|  在 每 年 \TU/TimesNewRoman(0)/m/n/12 HK$60,000
  []
 
@@ -859,7 +859,7 @@ File: ../output/fig2_income_breakdown.png Graphic file (type bmp)
 [5] [6]
 
 LaTeX Font Warning: Font shape `TU/SongtiSC(0)/m/sl' undefined
-(Font)              using `TU/SongtiSC(0)/m/n' instead on input line 364.
+(Font)              using `TU/SongtiSC(0)/m/n' instead on input line 351.
 
 [7] (./main_zh.aux)
  ***********
@@ -874,10 +874,10 @@ Package rerunfilecheck Info: File `main_zh.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20654 strings out of 470015
- 494166 string characters out of 5474611
- 878039 words of memory out of 5000000
- 49139 multiletter control sequences out of 15000+600000
+ 20677 strings out of 470015
+ 495720 string characters out of 5474611
+ 877988 words of memory out of 5000000
+ 49162 multiletter control sequences out of 15000+600000
  634753 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  93i,9n,114p,346b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s

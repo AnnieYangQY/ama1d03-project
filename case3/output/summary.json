@@ -8,7 +8,7 @@
       "contribution_years": 45.1,
       "total_contributions": 1443931.0,
       "final_balance": 4996362.0,
-      "total_investment_gain": 3552431.0,
+      "total_investment_gain": 3552430.0,
       "final_annual_salary": 555156.0,
       "annual_retirement_income": 199854.0,
       "monthly_retirement_income": 16655.0,
@@ -74,10 +74,10 @@
       "name": "Peter",
       "assigned_fund": "global",
       "balance_assigned": 4996362.0,
-      "balance_swapped": 2430492.0,
+      "balance_swapped": 2427974.0,
       "rr_assigned_pct": 36.0,
       "rr_swapped_pct": 17.5,
-      "fund_effect": -2565870.0
+      "fund_effect": -2568387.0
     },
     {
       "name": "Mary",
@@ -86,7 +86,7 @@
       "balance_swapped": 2063587.0,
       "rr_assigned_pct": 9.1,
       "rr_swapped_pct": 22.1,
-      "fund_effect": 1212726.0
+      "fund_effect": 1212725.0
     }
   ]
 }

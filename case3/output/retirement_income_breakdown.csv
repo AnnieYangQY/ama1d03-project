@@ -1,7 +1,7 @@
 name,scenario,mpf_balance,oala_eligible,mpf_monthly,oala_monthly,oala_applied,total_monthly,final_monthly_salary,combined_replacement_ratio_pct
-Peter,actual,4996362.0,False,16655.0,0,0,16655.0,46263.0,36.0
-Peter,hypothetical_normal,4996362.0,False,16655.0,2065,0,18720.0,46263.0,40.5
-Peter,hypothetical_higher,4996362.0,False,16655.0,4185,0,20840.0,46263.0,45.0
-Mary,actual,850862.0,False,2836.0,0,0,2836.0,31176.0,9.1
-Mary,hypothetical_normal,850862.0,False,2836.0,2065,0,4901.0,31176.0,15.7
-Mary,hypothetical_higher,850862.0,False,2836.0,4185,0,7021.0,31176.0,22.5
+Peter,integrated,4996362.0,False,16655.0,0,0,16655.0,46263.0,36.0
+Peter,mpf_only,4996362.0,False,16655.0,0,0,16655.0,46263.0,36.0
+Peter,hypothetical_higher,4996362.0,True,16655.0,4185,4185,20840.0,46263.0,45.0
+Mary,integrated,850862.0,True,2836.0,4185,4185,7021.0,31176.0,22.5
+Mary,mpf_only,850862.0,False,2836.0,0,0,2836.0,31176.0,9.1
+Mary,hypothetical_higher,850862.0,True,2836.0,4185,4185,7021.0,31176.0,22.5
