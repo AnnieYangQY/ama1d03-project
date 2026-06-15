@@ -90,7 +90,7 @@ Each employee holds a personal account within a scheme. When changing jobs, accr
 \textbf{Voluntary Contributions:}
 \begin{itemize}
   \item \textbf{In-scheme VC} is paid into the existing MPF plan. It does not qualify for salaries-tax relief and follows the same withdrawal rules as mandatory contributions.
-  \item \textbf{TVC} is held in a separate personal account. Up to \textbf{HK\$60,000 per year} can be deducted for salaries tax, and the withdrawal rules are more flexible.
+  \item \textbf{Tax Deductible Voluntary Contributions (TVC)} are held in a separate personal account. Up to \textbf{HK\$60,000 per year} can be deducted for salaries tax, and the withdrawal rules are more flexible.
 \end{itemize}
 
 In Case III, Peter and Mary each contribute HK\$1,000, which is 5\% of a HK\$20,000 salary. Their employers match this amount, so total monthly contributions are \textbf{HK\$2,000}.
@@ -115,7 +115,7 @@ Mandatory MPF contributions are tax-exempt up to statutory limits. TVC gives mem
 
 \subsection*{1. Modelling Setup}
 
-We simulate monthly MPF accumulation from December 2000 until each member reaches age 65. Table~\ref{tab:assumptions} lists the main assumptions.
+We simulate monthly MPF accumulation from December 2000 until each member reaches age 65. Table~\ref{tab:assumptions} lists the main assumptions. Monthly fund returns and CPI are taken from the sources described in Table~\ref{tab:sources}.
 
 \textbf{Notes on the assumptions:}
 \begin{itemize}
@@ -150,8 +150,25 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
 
 \begin{table}[H]
   \centering
+  \caption{Data sources for simulation inputs}
+  \label{tab:sources}
+  \small
+  \begin{tabular}{@{}p{3.2cm}p{4.2cm}p{5.8cm}@{}}
+    \toprule
+    Variable & Source & Use in model \\
+    \midrule
+    Salary growth & Census and Statistics Department, Hong Kong Composite CPI annual YoY & Converted to a monthly CPI index for contribution growth \\
+    Hong Kong fund returns & Yahoo Finance, Hang Seng Index \texttt{\^{}HSI} & Monthly total returns for Mary's Hong Kong fund \\
+    Global fund returns & Yahoo Finance: \texttt{\^{}GSPC}, \texttt{EFA}, \texttt{ACWI} & Spliced monthly returns for Peter's global fund \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
   \caption{Case III participant settings}
   \label{tab:participants}
+  \small
   \begin{tabular}{@{}lcc@{}}
     \toprule
     & Peter & Mary \\
@@ -160,9 +177,18 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
     Retirement age & 65 & 65 \\
     Contribution period & 45 years & 25 years \\
     Retirement year & 2045 & 2025 \\
-    Assigned fund & Global, spliced & Hong Kong, \texttt{\^{}HSI} \\
+    Assigned fund in Case III & Global equity fund & Hong Kong equity fund \\
+    Return proxy used & Spliced global index & Hang Seng Index \\
     \bottomrule
   \end{tabular}
+
+  \vspace{0.5em}
+  {\footnotesize
+  \textit{Fund proxies.}
+  Mary is assigned a Hong Kong equity fund in Case III. We proxy its returns with the \textbf{Hang Seng Index} \texttt{\^{}HSI}, the benchmark tracked by the Tracker Fund of Hong Kong (listed unit trust 2800.HK). Yahoo Finance supplies monthly \texttt{\^{}HSI} returns from December 2000.
+
+  Peter is assigned a global equity fund. No single global ETF covers the full period from MPF launch, so we \textbf{splice} three Yahoo Finance series: S\&P 500 \texttt{\^{}GSPC} from Dec 2000 to Aug 2001; then 65\% \texttt{\^{}GSPC} plus 35\% \texttt{EFA} (MSCI EAFE, developed markets outside the US) from Sep 2001 to Mar 2008; then \texttt{ACWI} (iShares MSCI ACWI ETF, broad global equities) from Apr 2008 onward. This sequence approximates a diversified global equity fund over 2000--2025.
+  }
 \end{table}
 
 \subsection*{2. Baseline Results}
@@ -295,7 +321,7 @@ Salaries and mandatory contributions move with CPI, but the real value of retire
   \label{fig:tvc}
 \end{figure}
 
-Mary needs large extra contributions or other income sources. Peter needs about HK\$1,600 more per month to reach 60\%, which fits within the TVC tax limit of HK\$60,000 per year, or about HK\$5,000 per month. Mary would need HK\$13,205 per month, far above that cap. Only the first HK\$5,000 per month would receive tax relief. The rest would have to come from non-deductible VC or third-pillar savings.
+Mary needs large extra contributions or other income sources. Peter needs about HK\$1,600 more per month of \textbf{tax-deductible voluntary contributions (TVC)} to reach 60\%, which fits within the annual TVC tax limit of HK\$60,000, or about HK\$5,000 per month. Mary would need HK\$13,205 per month, far above that cap. Only the first HK\$5,000 per month would receive tax relief. The rest would have to come from non-deductible in-scheme VC or third-pillar savings.
 
 \section*{(c) Supporting Retirement Under DC with the Social Security System}
 
@@ -362,7 +388,7 @@ Table~\ref{tab:income} shows the result after the asset test. Peter's MPF balanc
 \textbf{Peter, retiring in 2045:}
 \begin{itemize}
   \item MPF already gives a reasonable base at 36\%, but he will not qualify for OALA given his expected MPF assets.
-  \item Adding about HK\$1,600 of TVC per month would bring MPF income up to a 60\% replacement ratio within the tax-deductible TVC limit.
+  \item Adding about HK\$1,600 per month through \textbf{TVC} (tax-deductible voluntary contributions, as defined in Section~(a)) would bring MPF income up to a 60\% replacement ratio within the annual tax-deductible limit of HK\$60,000.
   \item A lifecycle approach makes more sense than holding global equity for all 45 years. Higher equity exposure early on, with a gradual shift toward bonds and capital-preservation funds after age 55, would reduce sequence risk.
   \item Converting part of the MPF balance into an annuity would provide a guaranteed income floor and help manage longevity risk.
 \end{itemize}
