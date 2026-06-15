@@ -15,11 +15,12 @@
 ## Remaining Manual Steps
 
 1. **Format report for submission**
-   - Copy `case3/report/case3_report.md` into Word/Google Docs
+   - Primary source: `case3/report/main.tex`
+   - Compile: `cd case3/report && make`
+   - Output PDF: `case3/report/main.pdf`
    - Font: Times New Roman 12pt; margins 1"; line spacing 1.0
-   - Insert figures from `case3/output/`
+   - Add your name/student ID on the title page if required
    - Ensure body is 6–12 pages (cover and appendix excluded)
-   - Add cover page and appendix (code summary, contribution statement if group)
 
 2. **Record video (≤10 min)**
    - Follow `case3/report/video_script.md`

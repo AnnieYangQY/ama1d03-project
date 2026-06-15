@@ -18,7 +18,16 @@ python3 src/validate.py
 | `output/baseline_comparison.csv` | Peter vs Mary core results |
 | `output/tvc_gap_analysis.csv` | TVC needed for 60%/70% RR |
 | `output/fig1–fig4` | Report figures |
-| `report/case3_report.md` | Full (a)(b)(c) report draft |
+## Report (LaTeX)
+
+```bash
+cd case3/report
+make          # or: pdflatex main.tex (run twice)
+```
+
+Output: `case3/report/main.pdf` (Times New Roman 12pt, 1" margins)
+
+Source: `case3/report/main.tex`
 | `report/video_script.md` | 10-minute presentation script |
 
 ## Reproduce
