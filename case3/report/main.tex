@@ -12,20 +12,14 @@
 \usepackage{amsmath}
 \usepackage{caption}
 \usepackage{float}
+\usepackage{enumitem}
 
 \singlespacing
+\setlist{nosep, leftmargin=*}
 \sisetup{group-separator = {,}, group-minimum-digits = 4}
+\captionsetup{font=small, skip=5pt}
 
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  citecolor=black,
-  urlcolor=blue
-}
-
-\title{Section II: Case III\\Defined Contribution Plan and MPF Retirement Planning}
-\author{AMA1D03 Introduction to Pension Mathematics}
-\date{}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue}
 
 \begin{document}
 
@@ -40,133 +34,62 @@
 \end{titlepage}
 \setcounter{page}{1}
 
-\section*{(a) Descriptions of the Defined Contribution Plan and Its Application in the Pension System}
+\section*{(a) DC Plan and MPF in Hong Kong's Pension System}
 
-\subsection*{1. Defined Contribution (DC) versus Defined Benefit (DB)}
+\subsection*{1. DC versus DB}
 
-In a defined contribution plan, contributions are set in advance but the retirement benefit is not. The employer and employee pay into a personal account, and the final balance depends on how much was contributed, how investments performed, and what fees were charged. The member carries most of the investment and longevity risk.
+In a \textbf{defined contribution (DC)} plan, contributions are fixed but the retirement benefit is not. The final balance depends on contributions, investment returns, and fees, and the member bears most investment and longevity risk. In a \textbf{defined benefit (DB)} plan, the benefit formula is fixed while required contributions are not; the sponsor bears most funding risk. Hong Kong's MPF, launched \textbf{1 December 2000}, is a mandatory DC scheme and forms the \textbf{second pillar}, together with ORSO where applicable.
 
-In a defined benefit plan, the situation is reversed. The benefit formula is fixed, but the contributions needed to fund it are not. The sponsor uses actuarial assumptions to set contribution levels and bears most of the risk if the plan falls short. Hong Kong also has Occupational Retirement Schemes that can be run on either a DC or DB basis. These sit alongside mandatory MPF as part of the second pillar.
+Hong Kong has no public pension linked to past earnings. The \textbf{first pillar} provides flat-rate, means-tested cash benefits: CSSA as the last-resort safety net, OALA for lower-income seniors, and OAA which is more widely available but pays less. The \textbf{third pillar} is personal savings, insurance, and family support. For the middle class, MPF is the main retirement base.
 
-Hong Kong's Mandatory Provident Fund System began on \textbf{1 December 2000}. It is a compulsory DC scheme and forms the second pillar of the city's retirement framework:
-\begin{itemize}
-  \item \textbf{First pillar:} Flat-rate cash benefits subject to means tests. CSSA is the last-resort safety net. OALA targets lower-income seniors. OAA is more widely available but pays less.
-  \item \textbf{Second pillar:} Mandatory and voluntary MPF contributions, together with ORSO where it applies.
-  \item \textbf{Third pillar:} Personal savings, insurance, and family support.
-\end{itemize}
+\subsection*{2. MPF Rules Relevant to Case III}
 
-Hong Kong has no public pension linked to past earnings. First-pillar payments are fixed amounts, so MPF is the main retirement base for the middle class. This is a major difference from systems such as Canada's CPP or US Social Security.
+The MPFA classifies schemes into master trust, employer-sponsored, and industry schemes. Each member holds a portable personal account.
 
-\subsection*{2. Types of MPF Schemes}
+\textbf{Mandatory contributions:} employee and employer each pay \textbf{5\%} of relevant income, with a monthly floor of HK\$7,100 and ceiling of HK\$30,000. If income is below HK\$7,100, the employee pays nothing but the employer still contributes 5\% of HK\$7,100. The maximum from either party is HK\$1,500 per month.
 
-The MPFA classifies schemes into three types:
+\textbf{Voluntary contributions:} \textbf{In-scheme VC} has no salaries-tax relief and follows mandatory withdrawal rules. \textbf{Tax-deductible voluntary contributions (TVC)} are held in a separate account; up to \textbf{HK\$60,000 per year} is deductible for salaries tax.
 
-\begin{table}[H]
-  \centering
-  \caption{Types of MPF schemes}
-  \begin{tabular}{@{}p{3.2cm}p{9.8cm}@{}}
-    \toprule
-    Scheme Type & Description \\
-    \midrule
-    Master Trust Schemes & Open to employees of participating employers and self-employed persons \\
-    Employer-sponsored Schemes & Only for employees of a single employer \\
-    Industry Schemes & For workers in sectors such as catering and construction \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+Members can normally withdraw at age \textbf{65}, or earlier on permanent departure, incapacity, or terminal illness. They may take a lump sum or convert part of the balance into an annuity to manage longevity risk. Fund fees are typically 0.5\%--2\% per year. In Case III, Peter and Mary each contribute HK\$1,000 with employer matching, totalling \textbf{HK\$2,000} per month. Peter invests in a global equity fund and Mary in a Hong Kong equity fund. Mandatory contributions alone are \textbf{not enough} to maintain pre-retirement living standards.
 
-Each employee holds a personal account within a scheme. When changing jobs, accrued benefits can be transferred to a new employer's scheme or kept in a personal account.
-
-\subsection*{3. Mandatory and Voluntary Contributions}
-
-\textbf{Mandatory Contributions:}
-\begin{itemize}
-  \item Employee and employer each contribute \textbf{5\%} of relevant income.
-  \item Relevant income has a monthly floor of HK\$7,100 and a ceiling of HK\$30,000.
-  \item If monthly income falls below HK\$7,100, the employee pays nothing, but the employer still contributes 5\% of HK\$7,100.
-  \item The maximum mandatory contribution from either party is HK\$1,500 per month.
-\end{itemize}
-
-\textbf{Voluntary Contributions:}
-\begin{itemize}
-  \item \textbf{In-scheme VC} is paid into the existing MPF plan. It does not qualify for salaries-tax relief and follows the same withdrawal rules as mandatory contributions.
-  \item \textbf{Tax Deductible Voluntary Contributions (TVC)} are held in a separate personal account. Up to \textbf{HK\$60,000 per year} can be deducted for salaries tax, and the withdrawal rules are more flexible.
-\end{itemize}
-
-In Case III, Peter and Mary each contribute HK\$1,000, which is 5\% of a HK\$20,000 salary. Their employers match this amount, so total monthly contributions are \textbf{HK\$2,000}.
-
-\subsection*{4. Benefits, Withdrawal, and Retirement Age}
-
-Members can normally withdraw accrued benefits at age \textbf{65}. Benefits may also be taken early on permanent departure from Hong Kong, total incapacity, terminal illness, or retirement at age 60 after leaving employment. Members with total accrued benefits of HK\$5,000 or less may apply for small-balance withdrawal. On death, benefits are paid to nominated beneficiaries.
-
-At retirement, members may take a lump sum or convert part of the balance into an annuity through the MPF platform. Annuities help address longevity risk, which is one of the main weaknesses of DC plans when members live longer than their savings last.
-
-\subsection*{5. Investment Options, Returns, and Fees}
-
-MPF schemes offer Hong Kong, China, Asia, and global equity funds, mixed-asset funds, bond and guaranteed funds, and index funds such as the Tracker Fund of Hong Kong.
-
-Members bear investment risk. Fund managers charge annual fees, usually between 0.5\% and 2\%, which reduce net returns over long periods. In Case III, Peter invests in a global fund and Mary in a Hong Kong fund. This shows how fund choice affects outcomes even when the contribution pattern is the same.
-
-\subsection*{6. Tax Treatment and System Role}
-
-Mandatory MPF contributions are tax-exempt up to statutory limits. TVC gives members an extra tax incentive if they want to close a retirement income gap. Research and industry practice both suggest that mandatory contributions alone are \textbf{not enough} to maintain pre-retirement living standards. Members are expected to add voluntary savings and, where they qualify, government cash benefits.
-
-\section*{(b) Compare and Analyze the Defined Contribution Plan: Peter and Mary Examples}
+\section*{(b) Analysis: Peter and Mary}
 
 \subsection*{1. Modelling Setup}
 
-We simulate monthly MPF accumulation from December 2000 until each member reaches age 65. Table~\ref{tab:assumptions} lists the main assumptions. Monthly fund returns and CPI are taken from the sources described in Table~\ref{tab:sources}.
+We simulate monthly MPF accumulation from December 2000 until each member reaches age 65. Table~\ref{tab:assumptions} lists the main assumptions and data sources.
 
-\textbf{Notes on the assumptions:}
-\begin{itemize}
-  \item \textbf{Salary growth linked to CPI.} This treats real wages as flat over a member's career. In practice, wages often rise faster than inflation early in a career, which would increase final salary and push the replacement ratio down further.
-  \item \textbf{Investment returns.} We use actual monthly returns up to the latest available data, then assume \textbf{4\% per year} on a nominal basis thereafter. This matches common long-run planning figures used by the MPFA and industry. The model is not a pure historical back-test. Global funds outperformed Hong Kong equities over 2000--2025, but that reflects one historical window and should not be read as a forecast.
-  \item \textbf{4\% withdrawal rule.} Retirement income in the first year equals 4\% of the account balance, with later withdrawals assumed to rise with inflation. The rule was developed for 30-year retirements in the United States. Hong Kong residents often live beyond 85, so a fixed withdrawal rate can leave members exposed to running out of money.
-  \item \textbf{Fees.} We assume 1\% per year, which sits in the middle of the MPF range. Index funds often charge less than 0.5\%, while active equity funds commonly charge between 1.2\% and 1.8\%. Over 25 to 45 years, even small fee differences matter.
-\end{itemize}
+\textbf{Notes:} Salary growth linked to CPI implies flat real wages; actual career wage growth would lower the replacement ratio further. Returns use historical data to the latest available month, then \textbf{4\% p.a.} nominal forward returns. The \textbf{4\% withdrawal rule} sets first-year retirement income at 4\% of the balance. We assume a \textbf{1\% p.a.} expense ratio, near the middle of the MPF range.
 
 \begin{table}[H]
   \centering
-  \caption{Key modelling assumptions}
+  \caption{Modelling assumptions and data sources}
   \label{tab:assumptions}
   \small
   \begin{tabular}{@{}lll@{}}
     \toprule
-    Parameter & Value & Note \\
+    Item & Value & Source / note \\
     \midrule
-    Start date & 1 Dec 2000 & MPF launch \\
-    Retirement age & 65 & Normal retirement \\
     Initial monthly salary & HK\$20,000 & Case III \\
     Monthly MC, employee plus employer & HK\$2,000 & 5\% + 5\% \\
-    Salary growth & HK Composite CPI & Real wages held constant \\
-    Hong Kong Fund proxy & Hang Seng Index, \texttt{\^{}HSI} & Tracker Fund tracks HSI \\
-    Global Fund proxy & Spliced \texttt{\^{}GSPC}, \texttt{EFA}, \texttt{ACWI} & History from Dec 2000 \\
-    Forward return & 4\% p.a., nominal & After latest market data \\
-    Fund expense ratio & 1\% p.a. & Mid-range MPF fee \\
-    Retirement income & 4\% withdrawal rule & First-year income equals 4\% of balance \\
+    Salary growth & HK Composite CPI & C\&SD annual YoY \\
+    Mary: Hong Kong fund & Hang Seng Index \texttt{\^{}HSI} & Yahoo Finance \\
+    Peter: global fund & Spliced \texttt{\^{}GSPC}, \texttt{EFA}, \texttt{ACWI} & Yahoo Finance \\
+    Forward return / fee & 4\% p.a. / 1\% p.a. & After latest data \\
+    Retirement income & 4\% withdrawal rule & Year-1 income = 4\% of balance \\
     \bottomrule
   \end{tabular}
+
+  \vspace{0.4em}
+  {\footnotesize
+  \textit{Fund proxies.} Mary is assigned a Hong Kong equity fund. We use the \textbf{Hang Seng Index} \texttt{\^{}HSI} as its return proxy because the Tracker Fund of Hong Kong (2800.HK) replicates this index and Yahoo Finance provides monthly returns from December 2000.
+
+  Peter is assigned a global equity fund. No single global ETF covers the full MPF period, so we splice three series: \texttt{\^{}GSPC} from Dec 2000 to Aug 2001; 65\% \texttt{\^{}GSPC} plus 35\% \texttt{EFA} from Sep 2001 to Mar 2008; \texttt{ACWI} from Apr 2008 onward.
+  }
 \end{table}
 
 \begin{table}[H]
   \centering
-  \caption{Data sources for simulation inputs}
-  \label{tab:sources}
-  \small
-  \begin{tabular}{@{}p{3.2cm}p{4.2cm}p{5.8cm}@{}}
-    \toprule
-    Variable & Source & Use in model \\
-    \midrule
-    Salary growth & Census and Statistics Department, Hong Kong Composite CPI annual YoY & Converted to a monthly CPI index for contribution growth \\
-    Hong Kong fund returns & Yahoo Finance, Hang Seng Index \texttt{\^{}HSI} & Monthly total returns for Mary's Hong Kong fund \\
-    Global fund returns & Yahoo Finance: \texttt{\^{}GSPC}, \texttt{EFA}, \texttt{ACWI} & Spliced monthly returns for Peter's global fund \\
-  \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{table}[H]
-  \centering
-  \caption{Case III participant settings}
+  \caption{Case III participants}
   \label{tab:participants}
   \small
   \begin{tabular}{@{}lcc@{}}
@@ -175,20 +98,12 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
     \midrule
     Start age, Dec 2000 & 20 & 40 \\
     Retirement age & 65 & 65 \\
-    Contribution period & 45 years & 25 years \\
+    Contribution years & 45 & 25 \\
     Retirement year & 2045 & 2025 \\
-    Assigned fund in Case III & Global equity fund & Hong Kong equity fund \\
-    Return proxy used & Spliced global index & Hang Seng Index \\
+    Assigned fund & Global equity fund & Hong Kong equity fund \\
+    Return proxy & Spliced global index & Hang Seng Index \\
     \bottomrule
   \end{tabular}
-
-  \vspace{0.5em}
-  {\footnotesize
-  \textit{Fund proxies.}
-  Mary is assigned a Hong Kong equity fund in Case III. We proxy its returns with the \textbf{Hang Seng Index} \texttt{\^{}HSI}, the benchmark tracked by the Tracker Fund of Hong Kong (listed unit trust 2800.HK). Yahoo Finance supplies monthly \texttt{\^{}HSI} returns from December 2000.
-
-  Peter is assigned a global equity fund. No single global ETF covers the full period from MPF launch, so we \textbf{splice} three Yahoo Finance series: S\&P 500 \texttt{\^{}GSPC} from Dec 2000 to Aug 2001; then 65\% \texttt{\^{}GSPC} plus 35\% \texttt{EFA} (MSCI EAFE, developed markets outside the US) from Sep 2001 to Mar 2008; then \texttt{ACWI} (iShares MSCI ACWI ETF, broad global equities) from Apr 2008 onward. This sequence approximates a diversified global equity fund over 2000--2025.
-  }
 \end{table}
 
 \subsection*{2. Baseline Results}
@@ -200,27 +115,24 @@ We simulate monthly MPF accumulation from December 2000 until each member reache
   \small
   \begin{tabular}{@{}lrr@{}}
     \toprule
-    Indicator & Peter, Global & Mary, Hong Kong \\
+    & Peter & Mary \\
     \midrule
     Contribution years & 45.1 & 25.1 \\
     Total contributions, HK\$ & 1,443,931 & 723,931 \\
     Investment gains, HK\$ & 3,552,431 & 126,930 \\
     Final MPF balance, HK\$ & \textbf{4,996,362} & \textbf{850,862} \\
     Final annual salary, HK\$ & 555,156 & 374,107 \\
-    Annual retirement income, HK\$ & 199,854 & 34,034 \\
-    Monthly retirement income, HK\$ & 16,655 & 2,836 \\
+    Monthly MPF income, HK\$ & 16,655 & 2,836 \\
     Replacement ratio & \textbf{36.0\%} & \textbf{9.1\%} \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Figure~\ref{fig:balance} shows Peter's balance rising steadily over 45 years. Mary's balance grows more slowly over 25 years and ends at roughly one-sixth of Peter's level. Peter's investment gains of HK\$3.55 million exceed his total contributions of HK\$1.44 million, which illustrates how compounding works in a DC plan over a long horizon.
-
-Hong Kong equities were volatile during Mary's contribution period from 2000 to 2025, including the post-2000 downturn and the 2008 financial crisis. That helps explain why her final balance is lower than estimates based on incomplete return data.
+Peter's balance rises steadily over 45 years. Mary's balance over 25 years ends at about one-sixth of Peter's level. Peter's investment gains of HK\$3.55 million exceed his contributions of HK\$1.44 million, illustrating long-horizon compounding. Hong Kong equities were volatile over Mary's 2000--2025 period, which also helps explain her lower balance.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.92\textwidth]{../output/fig1_balance_over_age.png}
+  \includegraphics[width=0.88\textwidth]{../output/fig1_balance_over_age.png}
   \caption{MPF balance accumulation: Peter versus Mary}
   \label{fig:balance}
 \end{figure}
@@ -229,33 +141,34 @@ Hong Kong equities were volatile during Mary's contribution period from 2000 to 
 
 \textbf{Advantages:}
 \begin{enumerate}
-  \item \textbf{Individual ownership and portability.} Accounts belong to the member and move with them, which suits Hong Kong's mobile labour market. There is no employer credit risk of the kind seen in DB plans.
-  \item \textbf{Employer matching.} The employer's 5\% contribution doubles savings without extra cost to the employee.
-  \item \textbf{Investment choice.} Members can choose funds that match their risk tolerance.
-  \item \textbf{Tax relief on TVC.} Up to HK\$60,000 of TVC per year is tax-deductible.
-  \item \textbf{Long compounding horizons.} Members who start early benefit most. At 4\% per year, the Rule of 72 suggests wealth doubles about every 18 years. Over 45 years that compounds to roughly six times the original sum, compared with about 2.7 times over 25 years.
+  \item Individual ownership and portability suit Hong Kong's mobile labour market.
+  \item Employer matching doubles savings without extra employee cost.
+  \item Members can choose funds aligned with risk tolerance.
+  \item TVC of up to HK\$60,000 per year is tax-deductible.
+  \item Early starters benefit most from compounding; at 4\% p.a., wealth roughly doubles every 18 years.
 \end{enumerate}
 
 \textbf{Disadvantages:}
 \begin{enumerate}
-  \item \textbf{Market risk and sequence risk.} Members bear the full downside. A sharp fall in markets just before retirement can cut the final balance sharply.
-  \item \textbf{No pooling of risk.} Unlike DB plans, DC plans do not share longevity or investment shortfalls across members.
-  \item \textbf{Low replacement ratios.} Even Peter reaches only 36\% on mandatory contributions, below the 60--70\% range often used in financial planning.
-  \item \textbf{Fees and poor decisions.} Management fees compound against the member over time, and frequent fund switching often reduces returns further.
-  \item \textbf{Penalty for late starters.} Mary's 9.1\% replacement ratio shows that beginning at age 40 cannot be fixed simply by picking a better fund.
+  \item Members bear full market and sequence risk.
+  \item Unlike DB plans, there is no pooling of longevity or investment shortfalls.
+  \item Even Peter reaches only 36\% replacement on mandatory contributions.
+  \item Fees compound against members over 25--45 years.
+  \item Mary's 9.1\% ratio shows that starting at 40 cannot be fixed by fund choice alone.
 \end{enumerate}
 
 \subsection*{4. Start Age versus Fund Choice}
 
-Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fundswap} shows what happens when Peter and Mary swap funds.
+Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fundswap} shows fund-swap sensitivity. Figure~\ref{fig:age} plots the results.
 
 \begin{table}[H]
   \centering
   \caption{Replacement ratio by start age and fund}
   \label{tab:age}
+  \small
   \begin{tabular}{@{}ccrr@{}}
     \toprule
-    Start Age & Fund & Final Balance, HK\$ & Replacement Ratio \\
+    Start Age & Fund & Final Balance, HK\$ & RR \\
     \midrule
     20 & Global & 4,996,362 & 36.0\% \\
     20 & Hong Kong & 2,427,886 & 17.5\% \\
@@ -273,6 +186,7 @@ Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fund
   \centering
   \caption{Fund-swap sensitivity}
   \label{tab:fundswap}
+  \small
   \begin{tabular}{@{}lccc@{}}
     \toprule
     Name & Assigned RR & Swapped RR & Change, pp \\
@@ -283,28 +197,27 @@ Table~\ref{tab:age} reports replacement ratios by start age. Table~\ref{tab:fund
   \end{tabular}
 \end{table}
 
-\textbf{Key finding:} For the same fund, starting at age 20 rather than age 40 widens the replacement ratio by 27 percentage points, from 36.0\% to 9.1\% for the global and Hong Kong cases shown above. Peter at age 20 with the weaker Hong Kong fund still ends with a much higher balance than Mary. \textbf{How long you contribute matters more than which fund you pick}, because terminal value responds more strongly to time than to return.
+\textbf{Key finding:} At the same fund, starting at 20 rather than 40 widens the replacement ratio by 27 percentage points. Peter at 20 with the weaker Hong Kong fund still ends above Mary. \textbf{Contribution horizon dominates fund selection.}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.92\textwidth]{../output/fig3_start_age_sensitivity.png}
+  \includegraphics[width=0.88\textwidth]{../output/fig3_start_age_sensitivity.png}
   \caption{Effect of start age on replacement ratio}
   \label{fig:age}
 \end{figure}
 
-\subsection*{5. Living Expenses, Inflation, and Extra Contributions}
+\subsection*{5. Gaps and TVC}
 
-Many planners aim for a \textbf{60--70\% replacement ratio}. Using final monthly salary from Table~\ref{tab:baseline}, the monthly gap to 60\% is about HK\$11,103 for Peter and HK\$15,870 for Mary.
-
-Salaries and mandatory contributions move with CPI, but the real value of retirement income still depends on whether investment returns beat inflation. In a fee sensitivity check, Peter's balance falls from HK\$4.99 million at a 1\% fee to about HK\$4.32 million at 1.5\% over 45 years.
+Planners often target \textbf{60--70\%} replacement. Using final monthly salary from Table~\ref{tab:baseline}, the gap to 60\% is about HK\$11,103 per month for Peter and HK\$15,870 for Mary.
 
 \begin{table}[H]
   \centering
-  \caption{TVC required to reach target replacement ratio}
+  \caption{Extra monthly TVC to reach target replacement ratio}
   \label{tab:tvc}
+  \small
   \begin{tabular}{@{}lccc@{}}
     \toprule
-    Member & Current RR & Target RR & Extra Monthly TVC, HK\$ \\
+    Member & Current RR & Target RR & Extra TVC, HK\$ \\
     \midrule
     Peter & 36.0\% & 60\% & 1,582 \\
     Peter & 36.0\% & 70\% & 2,242 \\
@@ -314,102 +227,82 @@ Salaries and mandatory contributions move with CPI, but the real value of retire
   \end{tabular}
 \end{table}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.92\textwidth]{../output/fig4_tvc_marginal_effect.png}
-  \caption{Marginal effect of TVC on replacement ratio}
-  \label{fig:tvc}
-\end{figure}
+Peter needs about HK\$1,600 per month of \textbf{TVC} (tax-deductible voluntary contributions) to reach 60\%, within the annual limit of HK\$60,000. Mary needs HK\$13,205 per month, far above that cap; only the first HK\$5,000 per month receives tax relief.
 
-Mary needs large extra contributions or other income sources. Peter needs about HK\$1,600 more per month of \textbf{tax-deductible voluntary contributions (TVC)} to reach 60\%, which fits within the annual TVC tax limit of HK\$60,000, or about HK\$5,000 per month. Mary would need HK\$13,205 per month, far above that cap. Only the first HK\$5,000 per month would receive tax relief. The rest would have to come from non-deductible in-scheme VC or third-pillar savings.
+\section*{(c) Social Security and Recommendations}
 
-\section*{(c) Supporting Retirement Under DC with the Social Security System}
+\subsection*{1. Three Pillars and OALA}
 
-\subsection*{1. Hong Kong Three-Pillar Framework}
+Unlike Canada's CPP or US Social Security, Hong Kong has no universal earnings-related pension. For middle-income workers like Peter and Mary, first-pillar benefits are largely unavailable once MPF balances count toward the asset test.
 
-Unlike Canada's CPP or US Social Security, Hong Kong has no universal pension tied to earnings. Government support is means-tested and works in layers:
-\begin{itemize}
-  \item The \textbf{first pillar} gives a basic floor to seniors with low assets and low income. CSSA has the strictest tests, OALA is subject to asset and income limits, and OAA is easier to qualify for but pays less.
-  \item The \textbf{second pillar} is mandatory MPF for employed workers.
-  \item The \textbf{third pillar} is where most people must look if they want to keep their standard of living in retirement.
-\end{itemize}
+OALA pays Normal allowance of HK\$2,065 or Higher allowance of HK\$4,185 per month in 2025/26, subject to income and asset tests. For a single person, the asset limit is about HK\$401,000. \textbf{Unwithdrawn MPF counts as assets.} The more a member saves in DC, the less likely they receive OALA.
 
-For middle-income workers like Peter and Mary, first-pillar benefits are largely ruled out once MPF balances count toward the asset test. Retirement income has to come from MPF and voluntary savings, not from stacking pillars on top of one another.
+\subsection*{2. Combined Retirement Income}
 
-\subsection*{2. Old Age Living Allowance}
-
-Hong Kong residents aged 65 or above may receive Normal OALA of HK\$2,065 per month or Higher OALA of HK\$4,185 per month in 2025/26, provided they pass income and asset tests. For a single person, the asset limit for both tiers is about HK\$401,000. \textbf{MPF benefits that have not yet been withdrawn count as assets.} The more a member saves in a DC plan, the less likely they are to receive OALA. The two sources of support do not simply add together.
-
-\subsection*{3. Combined Retirement Income}
-
-Table~\ref{tab:income} shows the result after the asset test. Peter's MPF balance is HK\$4.99 million and Mary's is HK\$851,000. Both are above the limit, so neither receives OALA when MPF is counted. Table~\ref{tab:income_hyp} keeps the old OALA figures only as a hypothetical comparison, assuming assets were below the threshold. That assumption does not apply to Case III.
+Table~\ref{tab:income} shows actual eligibility. Both Peter and Mary exceed the asset limit and receive no OALA. Table~\ref{tab:income_hyp} gives hypothetical figures only if MPF were excluded from assets, which does not apply to Case III.
 
 \begin{table}[H]
   \centering
-  \caption{Retirement income after OALA asset test, MPF counted}
+  \caption{Retirement income after OALA asset test}
   \label{tab:income}
   \small
-  \begin{tabular}{@{}l r r r r r@{}}
+  \begin{tabular}{@{}lrrrr@{}}
     \toprule
-    Member & MPF Balance & Asset Limit & MPF Income & OALA & Combined RR \\
+    Member & MPF balance & MPF income & OALA & Combined RR \\
     \midrule
-    Peter & 4,996,362 & 401,000 & 16,655 & 0 & 36.0\% \\
-    Mary & 850,862 & 401,000 & 2,836 & 0 & 9.1\% \\
+    Peter & 4,996,362 & 16,655 & 0 & 36.0\% \\
+    Mary & 850,862 & 2,836 & 0 & 9.1\% \\
     \bottomrule
   \end{tabular}
 \end{table}
 
 \begin{table}[H]
   \centering
-  \caption{Hypothetical OALA if MPF were excluded from assets, not applicable to Case III}
+  \caption{Hypothetical OALA if MPF excluded, not applicable to Case III}
   \label{tab:income_hyp}
   \small
-  \begin{tabular}{@{}l l r r r r@{}}
+  \begin{tabular}{@{}llrrr@{}}
     \toprule
-    Member & Scenario & MPF & OALA & Total & Combined RR \\
+    Member & Scenario & MPF & OALA & Combined RR \\
     \midrule
-    Peter & Normal OALA & 16,655 & 2,065 & 18,720 & 40.5\% \\
-    Peter & Higher OALA & 16,655 & 4,185 & 20,840 & 45.0\% \\
-    Mary & Normal OALA & 2,836 & 2,065 & 4,901 & 15.7\% \\
-    Mary & Higher OALA & 2,836 & 4,185 & 7,021 & 22.5\% \\
+    Peter & Higher OALA & 16,655 & 4,185 & 45.0\% \\
+    Mary & Higher OALA & 2,836 & 4,185 & 22.5\% \\
     \bottomrule
   \end{tabular}
 \end{table}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.78\textwidth]{../output/fig2_income_breakdown.png}
-  \caption{Actual retirement income from MPF; OALA not payable under the asset test}
+  \includegraphics[width=0.72\textwidth]{../output/fig2_income_breakdown.png}
+  \caption{Actual retirement income from MPF only}
   \label{fig:income}
 \end{figure}
 
-\subsection*{4. Illustrative Strategies}
+\subsection*{3. Strategies and Conclusions}
 
 \textbf{Peter, retiring in 2045:}
 \begin{itemize}
-  \item MPF already gives a reasonable base at 36\%, but he will not qualify for OALA given his expected MPF assets.
-  \item Adding about HK\$1,600 per month through \textbf{TVC} (tax-deductible voluntary contributions, as defined in Section~(a)) would bring MPF income up to a 60\% replacement ratio within the annual tax-deductible limit of HK\$60,000.
-  \item A lifecycle approach makes more sense than holding global equity for all 45 years. Higher equity exposure early on, with a gradual shift toward bonds and capital-preservation funds after age 55, would reduce sequence risk.
-  \item Converting part of the MPF balance into an annuity would provide a guaranteed income floor and help manage longevity risk.
+  \item MPF provides a 36\% base but OALA is unavailable.
+  \item Add about HK\$1,600/month through TVC to reach 60\% within the tax-deductible limit.
+  \item Shift gradually toward bonds and capital-preservation funds after age 55 to reduce sequence risk.
+  \item Consider partial annuitisation for longevity protection.
 \end{itemize}
 
 \textbf{Mary, retiring in 2025:}
 \begin{itemize}
-  \item Mandatory MPF alone leaves her at 9.1\%. Her balance of HK\$851,000 is above the OALA asset limit of HK\$401,000, so she will not receive OALA either.
-  \item Working until age 70 raises her replacement ratio only to 10.9\% in our simulation. Extra years of contributions help, but they cannot make up for starting 20 years later than Peter.
-  \item The savings she needs are far above the TVC tax cap. She would need non-deductible VC, third-pillar savings, and possibly part-time work.
-  \item With a smaller account, annuitising part of the balance or delaying withdrawals could still improve income security.
+  \item Mandatory MPF leaves her at 9.1\%; OALA is unavailable given her HK\$851,000 balance.
+  \item Delaying retirement to 70 raises RR only to 10.9\% (Table~\ref{tab:delay}).
+  \item She needs third-pillar savings and possibly part-time work; TVC alone is not realistic.
 \end{itemize}
-
-A workable plan for Mary might combine MPF income of HK\$2,836 with third-pillar savings or part-time work of about HK\$5,000 per month, giving roughly HK\$7,836 per month. That remains below the 60\% target of HK\$18,706. Even in the hypothetical Higher OALA case in Table~\ref{tab:income_hyp}, she would reach only 22.5\%.
 
 \begin{table}[H]
   \centering
   \caption{Mary: delayed retirement sensitivity}
   \label{tab:delay}
+  \small
   \begin{tabular}{@{}lrrr@{}}
     \toprule
-    Retirement Age & Contribution Years & MPF Balance, HK\$ & Replacement Ratio \\
+    Retire age & Years & Balance, HK\$ & RR \\
     \midrule
     65 & 25.1 & 850,862 & 9.1\% \\
     67 & 27.1 & 930,635 & 9.6\% \\
@@ -418,68 +311,53 @@ A workable plan for Mary might combine MPF income of HK\$2,836 with third-pillar
   \end{tabular}
 \end{table}
 
-\subsection*{5. Conclusions on Extra Contributions}
+A mixed plan for Mary of MPF income plus about HK\$5,000/month from other sources gives roughly HK\$7,836/month, still below the 60\% target of HK\$18,706.
 
 \begin{table}[H]
   \centering
   \caption{Summary recommendations}
   \label{tab:conclusion}
+  \small
   \begin{tabular}{@{}lcc@{}}
     \toprule
-    Question & Peter & Mary \\
+    & Peter & Mary \\
     \midrule
-    Is mandatory MPF sufficient? & No, 36\% & No, 9.1\% \\
-    Should they add TVC? & Yes, moderate amount & Yes, urgently \\
-    Can social security fill the gap? & No, asset test & No, asset test \\
+    Mandatory MPF sufficient? & No, 36\% & No, 9.1\% \\
+    Add TVC? & Yes, moderate & Yes, urgent \\
+    Social security fills gap? & No, asset test & No, asset test \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Hong Kong's DC system places most retirement responsibility on the individual. Peter's case shows that starting early and contributing steadily is the strongest lever available. OALA helps low-asset retirees, but meaningful MPF balances crowd it out for the middle class. \textbf{Both Peter and Mary need extra contributions. Mary faces a much larger gap and far less time to close it.}
-
-\subsection*{6. Core Conclusions}
-
+\textbf{Core conclusions:}
 \begin{enumerate}
-  \item Mandatory MPF alone is not enough to protect pre-retirement living standards. Voluntary savings are necessary.
-  \item \textbf{When contributions begin} matters more than fund choice in a DC plan, because time drives compounding more than return differences do.
-  \item Hong Kong's first pillar is a safety net for low-asset retirees, not a top-up for middle-income members with substantial MPF balances.
-  \item A sound retirement plan combines mandatory MPF, TVC within tax limits, third-pillar savings, gradual de-risking near retirement, and partial annuitisation.
+  \item Mandatory MPF alone cannot maintain pre-retirement living standards.
+  \item \textbf{When contributions begin} matters more than fund choice.
+  \item The first pillar is a floor for low-asset retirees, not a supplement for the middle class.
+  \item A complete plan combines MPF, TVC within tax limits, third-pillar savings, lifecycle de-risking, and partial annuitisation.
 \end{enumerate}
 
 \section*{Key Formulae}
 
-Future value with CPI-linked contributions, monthly simulation:
+Future value with CPI-linked contributions:
 \begin{equation}
   FV = \sum_{t=1}^{n} PMT_0 (1+g)^{t-1} \prod_{k=t+1}^{n}(1+r_k)
 \end{equation}
-where $PMT_0$ is the initial monthly contribution, $g$ is the annual growth rate of contributions, $r_k$ is the net return in period $k$, and $n$ is the number of contribution periods.
-
-When $r$ and $g$ are constant and $r \neq g$, the closed form for a growing annuity is:
+When $r$ and $g$ are constant and $r \neq g$,
 \begin{equation}
   FV = PMT_0 (1+r) \cdot \frac{(1+r)^n - (1+g)^n}{r - g}
 \end{equation}
-
-Replacement ratio under a 4\% withdrawal rate:
+Replacement ratio and monthly gap to a 60\% target:
 \begin{equation}
-  RR = \frac{FV \times 0.04}{Salary_{final}}
+  RR = \frac{FV \times 0.04}{Salary_{final}}, \qquad
+  Gap_{monthly} = 0.60 \times \frac{Salary_{final}}{12} - \frac{FV \times 0.04}{12}
 \end{equation}
-
-To find the monthly TVC needed for a target replacement ratio $\rho^*$, solve for $PMT_{TVC}$ in
-\begin{equation}
-  \rho^* = \frac{0.04 \times FV(PMT_0, g, r, n) + 0.04 \times FV(PMT_{TVC}, g, r, n')}{Salary_{final}}
-\end{equation}
-where $n'$ is the number of periods over which extra contributions are paid. In this case, $n'$ equals the full contribution horizon. Table~\ref{tab:tvc} is produced by binary search in the simulation model.
-
-Monthly income gap to a 60\% target:
-\begin{equation}
-  Gap_{monthly} = 0.60 \times \frac{Salary_{final}}{12} - \frac{FV_{MPF} \times 0.04}{12}
-\end{equation}
+where $PMT_0$ is initial monthly contribution, $g$ is contribution growth, $r_k$ is net return in period $k$, and $n$ is the number of periods.
 
 \begin{thebibliography}{9}
-  \bibitem{mpfa} Mandatory Provident Fund Schemes Authority, \textit{MPF Fund Performance Platform}, \url{https://mfp.mpfa.org.hk/}.
-  \bibitem{swd} Social Welfare Department, \textit{Old Age Living Allowance}, \url{https://www.swd.gov.hk/oala/}.
-  \bibitem{csd} Census and Statistics Department, \textit{Composite Consumer Price Index}.
-  \bibitem{ira} Investopedia, \textit{Individual Retirement Account}, \url{https://www.investopedia.com/terms/i/ira.asp}.
+  \bibitem{mpfa} MPFA, \textit{MPF Fund Performance Platform}, \url{https://mfp.mpfa.org.hk/}.
+  \bibitem{swd} SWD, \textit{Old Age Living Allowance}, \url{https://www.swd.gov.hk/oala/}.
+  \bibitem{csd} C\&SD, \textit{Composite Consumer Price Index}.
 \end{thebibliography}
 
 \end{document}

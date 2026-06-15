@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  15 JUN 2026 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  15 JUN 2026 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,8 +346,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box65
 \@float@everytoks=\toks26
 \@floatcapt=\box66
+) (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen258
+\enit@toks=\toks27
+\enit@inbox=\box67
+\enit@count@id=\count332
+\enitdp@description=\count333
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -356,28 +364,28 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count332
+\l__color_backend_stack_int=\count334
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -419,7 +427,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 24.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -430,118 +438,71 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/Users/yangqiyuan/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 53.
- (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 67.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 68.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 67.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 68.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 67.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 68.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 67.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 68.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 67.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 68.
  (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
-[]|\T1/ptm/m/n/12 Master Trust
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-[]|\T1/ptm/m/n/12 Employer-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-\T1/ptm/m/n/12 sponsored
- []
-
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84   \item E
-              mployee and employer each contribute \textbf{5\%} of relevant ... [1] [2]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
-
-Overfull \hbox (12.72755pt too wide) in paragraph at lines 133--149
- [][] 
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[]|\T1/ptm/m/n/10.95 Census and Statis-tics
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 160--160
-\T1/ptm/m/n/10.95 De-part-ment, Hong Kong
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-\T1/ptm/m/n/10.95 Com-pos-ite CPI an-nual
- []
-
-
-Underfull \hbox (badness 4108) in paragraph at lines 161--162
-[]|\T1/ptm/m/n/10.95 Monthly to-tal re-turns for Mary's
- []
-
-
-Underfull \hbox (badness 3769) in paragraph at lines 162--162
-[]|\T1/ptm/m/n/10.95 Yahoo Fi-nance: \T1/cmtt/m/n/10.95 ^^BGSPC\T1/ptm/m/n/10.95 ,
- []
-
-[4{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<../output/fig1_balance_over_age.png, id=45, 642.4pt x 353.7215pt>
+l.89 
+      [1]
+<../output/fig1_balance_over_age.png, id=21, 642.4pt x 353.7215pt>
 File: ../output/fig1_balance_over_age.png Graphic file (type png)
 <use ../output/fig1_balance_over_age.png>
-Package pdftex.def Info: ../output/fig1_balance_over_age.png  used on input line 223.
-(pdftex.def)             Requested size: 432.17375pt x 237.96909pt.
- [5 <../output/fig1_balance_over_age.png>] [6]
-<../output/fig3_start_age_sensitivity.png, id=76, 642.8015pt x 353.7215pt>
+Package pdftex.def Info: ../output/fig1_balance_over_age.png  used on input line 135.
+(pdftex.def)             Requested size: 413.3867pt x 227.62776pt.
+ [2{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [3 <../output/fig1_balance_over_age.png>]
+<../output/fig3_start_age_sensitivity.png, id=57, 642.8015pt x 353.7215pt>
 File: ../output/fig3_start_age_sensitivity.png Graphic file (type png)
 <use ../output/fig3_start_age_sensitivity.png>
-Package pdftex.def Info: ../output/fig3_start_age_sensitivity.png  used on input line 290.
-(pdftex.def)             Requested size: 432.17375pt x 237.82335pt.
- [7 <../output/fig3_start_age_sensitivity.png>]
-<../output/fig4_tvc_marginal_effect.png, id=88, 642.8015pt x 353.32pt>
-File: ../output/fig4_tvc_marginal_effect.png Graphic file (type png)
-<use ../output/fig4_tvc_marginal_effect.png>
-Package pdftex.def Info: ../output/fig4_tvc_marginal_effect.png  used on input line 319.
-(pdftex.def)             Requested size: 432.17375pt x 237.55342pt.
- [8 <../output/fig4_tvc_marginal_effect.png>]
-<../output/fig2_income_breakdown.png, id=100, 570.13pt x 353.7215pt>
+Package pdftex.def Info: ../output/fig3_start_age_sensitivity.png  used on input line 204.
+(pdftex.def)             Requested size: 413.3867pt x 227.48204pt.
+ [4 <../output/fig3_start_age_sensitivity.png>]
+Overfull \hbox (0.34045pt too wide) in paragraph at lines 238--239
+\T1/ptm/m/n/12 2025/26, sub-ject to in-come and as-set tests. For a sin-gle per-son, the as-set limit is about HK$401,000.
+ []
+
+<../output/fig2_income_breakdown.png, id=70, 570.13pt x 353.7215pt>
 File: ../output/fig2_income_breakdown.png Graphic file (type png)
 <use ../output/fig2_income_breakdown.png>
-Package pdftex.def Info: ../output/fig2_income_breakdown.png  used on input line 381.
-(pdftex.def)             Requested size: 366.40834pt x 227.32552pt.
- [9] [10 <../output/fig2_income_breakdown.png>] [11] [12] (./main.aux)
+Package pdftex.def Info: ../output/fig2_income_breakdown.png  used on input line 276.
+(pdftex.def)             Requested size: 338.22418pt x 209.8381pt.
+[5]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 285.
+ (/Users/yangqiyuan/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [6 <../output/fig2_income_breakdown.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 343.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 343.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 343.
+ [7] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -550,18 +511,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14538 strings out of 469339
- 280437 string characters out of 5465690
- 675728 words of memory out of 5000000
- 43119 multiletter control sequences out of 15000+600000
- 688775 words of font info for 124 fonts, out of 8000000 for 9000
+ 14849 strings out of 469339
+ 285706 string characters out of 5465690
+ 680150 words of memory out of 5000000
+ 43437 multiletter control sequences out of 15000+600000
+ 691691 words of font info for 131 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,11n,79p,534b,1124s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 417138 bytes).
+ 75i,9n,79p,591b,1147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (8 pages, 332062 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 74 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
