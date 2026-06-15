@@ -1,0 +1,408 @@
+\documentclass[12pt, letterpaper]{ctexart}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}
+\setCJKmainfont{Songti SC}
+\singlespacing
+\sisetup{group-separator = {,}, group-minimum-digits = 4}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\title{第二部分 Case III：界定供款计划与强积金退休规划}
+\author{AMA1D03 养老金数学导论}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\LARGE\bfseries 第二部分 Case III：\\[0.4em]
+  界定供款计划与强积金退休规划\par}
+  \vspace{1.5cm}
+  {\large AMA1D03 养老金数学导论\par}
+  \vfill
+  {\large \today\par}
+\end{titlepage}
+\setcounter{page}{1}
+
+\section*{(a) 界定供款计划的描述及其在养老金体系中的应用}
+
+\subsection*{1. 界定供款（DC）与界定福利（DB）}
+
+在\textbf{界定供款（Defined Contribution, DC）}计划中，退休福利并非预先确定。雇主和/或雇员向个人账户缴付规定金额，最终福利取决于累计供款、投资回报及费用。投资和长寿风险主要由成员承担。
+
+相比之下，\textbf{界定福利（Defined Benefit, DB）}计划按既定公式承诺福利（例如：最终薪金的一定比例乘以服务年数），大部分投资和长寿风险由计划主办者承担。
+
+香港强积金（MPF）制度于\textbf{2000年12月1日}推出，属于强制性 DC 计划，构成香港退休保障框架的\textbf{第二支柱}：
+\begin{itemize}
+  \item \textbf{第一支柱：}非供款型社会保障（如长者生活津贴、高龄津贴）
+  \item \textbf{第二支柱：}强积金强制及自愿供款
+  \item \textbf{第三支柱：}个人储蓄、保险及家庭支持
+\end{itemize}
+
+\subsection*{2. 强积金计划类型}
+
+根据积金局（MPFA）分类，强积金计划主要分为三类：
+
+\begin{table}[H]
+  \centering
+  \caption{强积金计划类型}
+  \begin{tabular}{@{}p{3.2cm}p{9.8cm}@{}}
+    \toprule
+    计划类型 & 说明 \\
+    \midrule
+    集成信托计划 & 可供参与雇主的雇员及自雇人士参加 \\
+    雇主营办计划 & 仅供单一雇主的雇员参加 \\
+    行业计划 & 供特定行业雇员参加（如饮食业、建造业） \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+每名雇员在计划内拥有个人账户。转换工作时，累计权益可转移至新雇主的计划或保留在个人账户中。
+
+\subsection*{3. 强制供款与自愿供款}
+
+\textbf{强制供款（MC）：}
+\begin{itemize}
+  \item 雇员与雇主各供款\textbf{有关入息的 5\%}
+  \item 有关入息设有下限（每月 HK\$7,100）及上限（每月 HK\$30,000）
+  \item 各方最高强制供款额：每月 HK\$1,500
+\end{itemize}
+
+\textbf{自愿供款：}
+\begin{itemize}
+  \item 计划内的自愿供款（VC）
+  \item 可扣税自愿供款（TVC）：每年最多\textbf{HK\$60,000}可在薪俸税中扣除
+\end{itemize}
+
+在 Case III 中，Peter 与 Mary 各供款 HK\$1,000（月薪 HK\$20,000 的 5\%），雇主等额配对，每月总供款为\textbf{HK\$2,000}。
+
+\subsection*{4. 福利、提取与退休年龄}
+
+成员一般可在\textbf{65岁}提取累计权益。其他提前提取条件包括：永久离港、完全丧失行为能力、罹患末期疾病，以及在60岁停止受雇后提前退休。
+
+提取时，成员可选择一次性提取，或通过强积金平台将部分余额转换为年金，以获得稳定的退休收入流。
+
+\subsection*{5. 投资选择、回报与费用}
+
+强积金提供多种基金类型：香港、中国、亚洲及全球股票基金；混合资产；债券及保证基金；以及指数基金（如追踪恒生指数基金的 Tracker Fund）。
+
+成员须承担\textbf{投资风险}。基金经理收取管理费（通常每年 0.5\%--2\%），长期会侵蚀净回报。Case III 中，Peter 投资于全球基金，Mary 投资于香港基金，说明在相同供款结构下，资产配置对长期结果的影响。
+
+\subsection*{6. 税务处理与制度角色}
+
+强制强积金供款在法定限额内可获税务豁免。TVC 为希望弥补退休收入缺口的成员提供额外税务优惠。学术及业界研究一致表明，单靠强制供款\textbf{不足以}维持退休前的生活水平，成员须以自愿储蓄及（如符合资格）政府现金福利作补充。
+
+\section*{(b) 界定供款计划的比较与分析——Peter 与 Mary 案例}
+
+\subsection*{1. 模型设定}
+
+本文使用 Python 模型（\texttt{case3/main.py}）模拟自 2000 年 12 月起至各成员年满 65 岁止的按月强积金累积过程。主要假设见表~\ref{tab:assumptions}。
+
+\begin{table}[H]
+  \centering
+  \caption{主要建模假设}
+  \label{tab:assumptions}
+  \small
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    参数 & 数值 & 说明 \\
+    \midrule
+    起始日期 & 2000年12月1日 & 强积金推出 \\
+    退休年龄 & 65岁 & 正常退休年龄 \\
+    初始月薪 & HK\$20,000 & Case III \\
+    每月强制供款（雇员+雇主） & HK\$2,000 & 5\% + 5\% \\
+    工资增长 & 香港综合消费物价指数 & 政府统计处年度同比 \\
+    香港基金代理 & Tracker Fund 2800.HK & 历史回报 \\
+    全球基金代理 & iShares ACWI & MSCI 全球指数代理 \\
+    未来回报假设 & 每年 4\% & 最新数据之后 \\
+    基金费用率 & 每年 1\% & 强积金典型区间 \\
+    退休收入 & 4\% 提款法则 & 按余额计算年收入 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{Case III 参与者设定}
+  \label{tab:participants}
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    & Peter & Mary \\
+    \midrule
+    起始年龄（2000年12月） & 20 & 40 \\
+    退休年龄 & 65 & 65 \\
+    供款年期 & 45年 & 25年 \\
+    退休年份 & 2045 & 2025 \\
+    指定基金 & 全球基金（ACWI） & 香港基金（2800.HK） \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection*{2. 基准情景结果}
+
+\begin{table}[H]
+  \centering
+  \caption{基准模拟结果}
+  \label{tab:baseline}
+  \small
+  \begin{tabular}{@{}lrr@{}}
+    \toprule
+    指标 & Peter（全球基金） & Mary（香港基金） \\
+    \midrule
+    供款年数 & 45.1 & 25.1 \\
+    累计供款（HK\$） & 1,443,931 & 723,931 \\
+    投资收益（HK\$） & 3,415,445 & 307,137 \\
+    退休时强积金余额（HK\$） & \textbf{4,859,376} & \textbf{1,031,068} \\
+    退休前年薪（HK\$） & 555,156 & 374,107 \\
+    年退休收入（HK\$） & 194,375 & 41,243 \\
+    月退休收入（HK\$） & 16,198 & 3,437 \\
+    替代率 & \textbf{35.0\%} & \textbf{11.0\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+图~\ref{fig:balance} 显示，Peter 的余额在 45 年内大幅上升，而 Mary 在 25 年内的增长较慢，最终余额约为 Peter 的五分之一。Peter 的投资收益（HK\$342万）远超累计供款（HK\$144万），充分体现了 DC 制度下长期复利的威力。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{../output/fig1_balance_over_age.png}
+  \caption{强积金余额累积：Peter 与 Mary 比较}
+  \label{fig:balance}
+\end{figure}
+
+\subsection*{3. 优势与劣势}
+
+\textbf{优势：}
+\begin{enumerate}
+  \item \textbf{雇主配对供款：}雇主 5\% 供款在不增加雇员成本的情况下使储蓄翻倍。
+  \item \textbf{可携带性：}转换工作时，累计权益可随雇员转移。
+  \item \textbf{投资选择：}成员可按风险偏好选择基金。
+  \item \textbf{税务优惠：}TVC 每年最多 HK\$60,000 可扣税。
+  \item \textbf{复利效应：}尽早开始供款者可受惠于数十年复利增长。
+\end{enumerate}
+
+\textbf{劣势：}
+\begin{enumerate}
+  \item \textbf{投资风险：}成员承担全部下跌风险；样本期内 Mary 的香港基金表现逊于全球基金。
+  \item \textbf{替代率偏低：}即使 Peter 的强制供款替代率亦仅 35\%，低于通常建议的 60--70\%。
+  \item \textbf{费用侵蚀：}管理费在 25--45 年内产生负面复利效应。
+  \item \textbf{无通胀保证：}退休收入取决于不确定的市场回报。
+  \item \textbf{迟供款惩罚：}Mary 11\% 的替代率表明，40岁才开始供款无法仅靠选基金弥补。
+\end{enumerate}
+
+\subsection*{4. 起始年龄与基金选择孰轻孰重}
+
+表~\ref{tab:age} 列示不同起始年龄的替代率；表~\ref{tab:fundswap} 列示互换基金后的敏感性结果。
+
+\begin{table}[H]
+  \centering
+  \caption{不同起始年龄与基金的替代率}
+  \label{tab:age}
+  \small
+  \begin{tabular}{@{}ccrr@{}}
+    \toprule
+    起始年龄 & 基金 & 最终余额（HK\$） & 替代率 \\
+    \midrule
+    20 & 全球 & 4,859,376 & 35.0\% \\
+    20 & 香港 & 2,763,879 & 19.9\% \\
+    30 & 全球 & 3,314,845 & 29.1\% \\
+    30 & 香港 & 1,750,965 & 15.4\% \\
+    40 & 全球 & 1,993,228 & 21.3\% \\
+    40 & 香港 & 1,031,068 & 11.0\% \\
+    50 & 全球 & 495,611 & 6.5\% \\
+    50 & 香港 & 407,045 & 5.4\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{基金互换敏感性分析}
+  \label{tab:fundswap}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    姓名 & 指定基金替代率 & 互换后替代率 & 变化（百分点） \\
+    \midrule
+    Peter（20岁） & 35.0\% & 19.9\% & $-15.1$ \\
+    Mary（40岁） & 11.0\% & 21.3\% & $+10.3$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\textbf{主要发现：}在相同基金下比较起始年龄，20岁与40岁（全球基金）的替代率相差\textbf{24个百分点}（35\% 对 11\%）。Peter 在20岁时即使选择表现较差的香港基金（19.9\%），最终余额仍远高于 Mary。\textbf{供款年期比基金选择更为重要。}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{../output/fig3_start_age_sensitivity.png}
+  \caption{起始年龄对替代率的影响}
+  \label{fig:age}
+\end{figure}
+
+\subsection*{5. 生活开支、通胀与额外供款}
+
+财务规划通常以\textbf{60--70\%替代率}为目标。Peter 的强积金收入距离 60\% 目标每月尚差约 HK\$11,360；Mary 尽管退休前月薪较低，每月缺口仍约 HK\$15,269。
+
+工资及强制供款随消费物价指数调整，但退休收入的实际购买力取决于投资回报能否跑赢通胀。45 年内 1\% 的费用差异可显著降低最终余额。
+
+\begin{table}[H]
+  \centering
+  \caption{达到目标替代率所需的 TVC}
+  \label{tab:tvc}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    成员 & 当前替代率 & 目标替代率 & 每月额外 TVC（HK\$） \\
+    \midrule
+    Peter & 35.0\% & 60\% & 1,703 \\
+    Peter & 35.0\% & 70\% & 2,384 \\
+    Mary & 11.0\% & 60\% & 10,482 \\
+    Mary & 11.0\% & 70\% & 12,623 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{../output/fig4_tvc_marginal_effect.png}
+  \caption{TVC 对替代率的边际效应}
+  \label{fig:tvc}
+\end{figure}
+
+Mary 迫切需要大量 TVC 或其他收入来源。Peter 要达到 60\% 替代率，每月仍需约 HK\$1,700 额外供款，若按年规划可在 TVC 扣税上限内实现。
+
+\section*{(c) 结合社会保障制度支持 DC 计划下的退休生活}
+
+\subsection*{1. 香港三支柱框架}
+
+与加拿大 CPP 或美国 Social Security 不同，香港\textbf{没有}全民、与收入挂钩的公共养老金。政府支持以资产审查为主：
+\begin{itemize}
+  \item \textbf{第一支柱：}长者生活津贴（OALA）、高龄津贴、综援
+  \item \textbf{第二支柱：}强积金强制供款及 TVC
+  \item \textbf{第三支柱：}私人储蓄、保险、家庭支持
+\end{itemize}
+
+\subsection*{2. 长者生活津贴（OALA）}
+
+年满65岁的合资格香港居民可领取普通 OALA（每月 HK\$2,065）或高额 OALA（每月 HK\$4,185）（2025/26 年度），须通过收入及资产审查。单身人士高额 OALA 的资产上限约为 HK\$401,000。\textbf{尚未提取的强积金权益可能计入资产}，使余额较高的成员可能不符合资格。
+
+\subsection*{3. 综合退休收入}
+
+\begin{table}[H]
+  \centering
+  \caption{退休收入构成（部分情景）}
+  \label{tab:income}
+  \small
+  \begin{tabular}{@{}l l r r r r@{}}
+    \toprule
+    成员 & 情景 & 强积金 & OALA & 合计 & 综合替代率 \\
+    \midrule
+    Peter & 无 OALA & 16,198 & 0 & 16,198 & 35.0\% \\
+    Peter & 普通 OALA & 16,198 & 2,065 & 18,263 & 39.5\% \\
+    Peter & 高额 OALA & 16,198 & 4,185 & 20,383 & 44.1\% \\
+    Mary & 无 OALA & 3,437 & 0 & 3,437 & 11.0\% \\
+    Mary & 普通 OALA & 3,437 & 2,065 & 5,502 & 17.6\% \\
+    Mary & 高额 OALA & 3,437 & 4,185 & 7,622 & 24.4\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{../output/fig2_income_breakdown.png}
+  \caption{退休收入构成：强积金 + 普通 OALA}
+  \label{fig:income}
+\end{figure}
+
+\subsection*{4. 策略示例}
+
+\textbf{Peter（2045年退休）：}
+\begin{itemize}
+  \item 强积金提供良好基础（替代率 35\%）。
+  \item 每月增加约 HK\$1,700 TVC，可使强积金单独达到 60\% 替代率。
+  \item 预期资产水平较高，可能不符合 OALA 资格，不宜依赖政府津贴。
+  \item 可考虑强积金年金化以防范长寿风险。
+\end{itemize}
+
+\textbf{Mary（2025年退休）：}
+\begin{itemize}
+  \item 单靠强制强积金严重不足（替代率 11\%）。
+  \item 即使领取高额 OALA（综合替代率 24.4\%），距离 60\% 仍有较大缺口。
+  \item 应尽快开始 TVC；可考虑延迟至65岁后继续工作。
+  \item 鉴于复利时间有限，须建立第三支柱储蓄。
+\end{itemize}
+
+Mary 的现实综合方案——强积金（HK\$3,437）+ 高额 OALA（HK\$4,185）+ 兼职或储蓄（HK\$5,000）——每月约 HK\$12,622，仍低于 60\% 目标（HK\$18,706）。
+
+\subsection*{5. 关于额外供款的结论}
+
+\begin{table}[H]
+  \centering
+  \caption{建议摘要}
+  \label{tab:conclusion}
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    问题 & Peter & Mary \\
+    \midrule
+    强制强积金是否足够？ & 否（35\%） & 否（11\%） \\
+    是否应增加 TVC？ & 是，适度 & 是，迫切 \\
+    社会保障能否填补缺口？ & 可能性低 & 仅部分 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+香港的 DC 制度将退休责任转移至个人。像 Peter 一样尽早、持续供款是最有效的杠杆。社会保障（OALA）为低资产退休人员提供安全网，但无法替代不足的终身储蓄。\textbf{Peter 与 Mary 均应增加额外供款，其中 Mary 的紧迫性及所需金额远高于 Peter。}
+
+\section*{主要公式}
+
+随 CPI 增长的供款累积终值：
+\begin{equation}
+  FV = \sum_{t=1}^{n} PMT_0 (1+g)^{t-1} \prod_{k=t+1}^{n}(1+r_k)
+\end{equation}
+
+采用 4\% 提款率的替代率：
+\begin{equation}
+  RR = \frac{FV \times 0.04}{Salary_{final}}
+\end{equation}
+
+每月 TVC 缺口：
+\begin{equation}
+  Gap_{monthly} = Target_{monthly} - \frac{FV_{MPF} \times 0.04}{12} - OALA_{monthly}
+\end{equation}
+
+\begin{thebibliography}{9}
+  \bibitem{mpfa} 强制性公积金计划管理局，《强积金基金表现平台》，\url{https://mfp.mpfa.org.hk/}。
+  \bibitem{swd} 社会福利署，《长者生活津贴》，\url{https://www.swd.gov.hk/oala/}。
+  \bibitem{csd} 政府统计处，《综合消费物价指数》。
+  \bibitem{ira} Investopedia, \textit{Individual Retirement Account (IRA)}, \url{https://www.investopedia.com/terms/i/ira.asp}.
+\end{thebibliography}
+
+\appendix
+\section*{附录：模拟结果复现说明}
+
+所有数值结果由 \texttt{case3/} 目录下的 Python 程序生成。复现表格与图表请执行：
+\begin{verbatim}
+cd case3
+python3 main.py
+python3 src/validate.py
+\end{verbatim}
+
+输出文件存放于 \texttt{case3/output/}，假设说明见 \texttt{case3/data/assumptions.md}。
+
+\end{document}

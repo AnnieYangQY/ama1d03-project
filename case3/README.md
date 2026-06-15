@@ -20,14 +20,26 @@ python3 src/validate.py
 | `output/fig1–fig4` | Report figures |
 ## Report (LaTeX)
 
+**英文版：**
 ```bash
 cd case3/report
-make          # or: pdflatex main.tex (run twice)
+make          # 输出 main.pdf
 ```
 
-Output: `case3/report/main.pdf` (Times New Roman 12pt, 1" margins)
+**中文版：**
+```bash
+cd case3/report
+make zh       # 输出 main_zh.pdf（需 XeLaTeX）
+```
 
-Source: `case3/report/main.tex`
+| 文件 | 说明 |
+|------|------|
+| `main.tex` | 英文报告源文件 |
+| `main_zh.tex` | 中文报告源文件 |
+| `main.pdf` | 英文 PDF |
+| `main_zh.pdf` | 中文 PDF |
+
+格式：12pt、页边距 1 英寸、单倍行距；英文 Times New Roman，中文宋体。
 | `report/video_script.md` | 10-minute presentation script |
 
 ## Reproduce
