@@ -101,8 +101,10 @@ def simulate_participant(
 
         if dt in returns.index:
             gross_return = returns.loc[dt]
+            return_source = "historical"
         else:
             gross_return = forward_monthly
+            return_source = "projected"
 
         net_return = (1 + gross_return) * (1 - expense_monthly) - 1
         contrib = _monthly_contribution(salary, cfg) + extra_monthly_contribution
@@ -116,6 +118,7 @@ def simulate_participant(
                 "salary_monthly": salary,
                 "contribution": contrib,
                 "monthly_return": net_return,
+                "return_source": return_source,
                 "balance": balance,
             }
         )

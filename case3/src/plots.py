@@ -7,6 +7,8 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
+from matplotlib.lines import Line2D
+
 from analysis import run_all
 from mpf_simulator import SimulationConfig, load_participants, simulate_participant
 
@@ -26,13 +28,60 @@ def _save(fig: plt.Figure, name: str) -> None:
 
 def plot_balance_over_age(cfg: SimulationConfig) -> None:
     fig, ax = plt.subplots(figsize=(9, 5))
+    colors = {"Peter": "#1f77b4", "Mary": "#ff7f0e"}
+    boundary_age: float | None = None
+
     for p in load_participants():
         result = simulate_participant(p, cfg)
-        ax.plot(result.history["age"], result.history["balance"] / 1e6, label=p.name, linewidth=2)
+        df = result.history
+        hist = df[df["return_source"] == "historical"]
+        proj = df[df["return_source"] == "projected"]
+        color = colors[p.name]
+
+        if p.name == "Mary":
+            ax.plot(hist["age"], hist["balance"] / 1e6, color=color, linewidth=2.5, label="Mary")
+            retire_age = float(hist["age"].iloc[-1])
+            ax.scatter([retire_age], [hist["balance"].iloc[-1] / 1e6], color=color, s=40, zorder=5)
+            ax.annotate(
+                "Mary retires\n(all historical)",
+                xy=(retire_age, hist["balance"].iloc[-1] / 1e6),
+                xytext=(retire_age - 9, hist["balance"].iloc[-1] / 1e6 + 0.35),
+                fontsize=8,
+                arrowprops={"arrowstyle": "->", "color": color, "lw": 1},
+                color=color,
+            )
+            continue
+
+        # Peter: solid historical segment
+        ax.plot(hist["age"], hist["balance"] / 1e6, color=color, linewidth=2.5, label="Peter")
+        if not proj.empty:
+            boundary_age = float(proj["age"].iloc[0])
+            # connect historical end to projected start
+            bridge = pd.concat([hist.iloc[[-1]], proj])
+            ax.plot(bridge["age"], bridge["balance"] / 1e6, color=color, linewidth=2.5, linestyle="--")
+
+    if boundary_age is not None:
+        ax.axvline(boundary_age, color="gray", linestyle=":", linewidth=1.2, alpha=0.8)
+        ax.axvspan(boundary_age, 65, alpha=0.06, color="gray")
+        ax.text(
+            boundary_age + 0.4,
+            ax.get_ylim()[1] * 0.55,
+            "Peter only:\n4% projected\nfrom Jul 2026",
+            fontsize=8,
+            color="gray",
+            va="top",
+        )
+
+    legend_handles = [
+        Line2D([0], [0], color=colors["Mary"], linewidth=2.5, label="Mary"),
+        Line2D([0], [0], color=colors["Peter"], linewidth=2.5, label="Peter"),
+        Line2D([0], [0], color=colors["Peter"], linewidth=2.5, linestyle="--", label="Peter projected (4% p.a.)"),
+    ]
+    ax.legend(handles=legend_handles, fontsize=8, loc="upper left")
+
     ax.set_xlabel("Age")
     ax.set_ylabel("MPF Balance (HK$ millions)")
     ax.set_title("MPF Balance Accumulation: Peter vs Mary")
-    ax.legend()
     _save(fig, "fig1_balance_over_age.png")
 
 
