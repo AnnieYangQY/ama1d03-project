@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.19)  15 JUN 2026 15:18
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.19)  15 JUN 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -796,8 +796,8 @@ Package caption Info: End \AtBeginDocument code.
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 101.
- [1]
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 94.
+ [1] [2]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -831,28 +831,24 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [2]
+ [3]
 File: ../output/fig1_balance_over_age.png Graphic file (type bmp)
 <../output/fig1_balance_over_age.png>
- [3] [4]
+ [4]
 File: ../output/fig3_start_age_sensitivity.png Graphic file (type bmp)
 <../output/fig3_start_age_sensitivity.png>
  [5]
 File: ../output/fig4_tvc_marginal_effect.png Graphic file (type bmp)
 <../output/fig4_tvc_marginal_effect.png>
- [6]
+ [6] [7]
 File: ../output/fig2_income_breakdown.png Graphic file (type bmp)
 <../output/fig2_income_breakdown.png>
- [7] [8]
-Underfull \hbox (badness 1824) in paragraph at lines 395--396
-[]\TU/TimesNewRoman(0)/m/n/12 Investopedia, \TU/TimesNewRoman(0)/m/it/12 Individual Retirement Account (IRA)\TU/TimesNewRoman(0)/m/n/12 , [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] []
- []
-
+ [8] [9]
 
 LaTeX Font Warning: Font shape `TU/SongtiSC(0)/m/sl' undefined
-(Font)              using `TU/SongtiSC(0)/m/n' instead on input line 410.
+(Font)              using `TU/SongtiSC(0)/m/n' instead on input line 459.
 
-[9] (./main_zh.aux)
+[10] [11] (./main_zh.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -865,12 +861,12 @@ Package rerunfilecheck Info: File `main_zh.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20358 strings out of 470015
- 490939 string characters out of 5474611
- 868263 words of memory out of 5000000
- 48851 multiletter control sequences out of 15000+600000
- 634713 words of font info for 114 fonts, out of 8000000 for 9000
+ 20177 strings out of 470015
+ 479446 string characters out of 5474611
+ 869387 words of memory out of 5000000
+ 48671 multiletter control sequences out of 15000+600000
+ 634705 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 93i,10n,114p,346b,1021s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,10n,114p,346b,1058s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_zh.pdf (10 pages).
+Output written on main_zh.pdf (12 pages).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  15 JUN 2026 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.19)  15 JUN 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,7 +493,7 @@ Overfull \hbox (12.72755pt too wide) in paragraph at lines 133--149
  []
 
 [3{/Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<../output/fig1_balance_over_age.png, id=37, 642.4pt x 353.7215pt>
+<../output/fig1_balance_over_age.png, id=36, 642.4pt x 353.7215pt>
 File: ../output/fig1_balance_over_age.png Graphic file (type png)
 <use ../output/fig1_balance_over_age.png>
 Package pdftex.def Info: ../output/fig1_balance_over_age.png  used on input line 197.
@@ -533,7 +533,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  75i,10n,79p,496b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/yangqiyuan/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 401222 bytes).
+Output written on main.pdf (13 pages, 400489 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  170 compressed objects within 2 object streams
