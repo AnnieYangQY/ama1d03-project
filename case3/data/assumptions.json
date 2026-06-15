@@ -1,0 +1,34 @@
+{
+  "simulation": {
+    "start_date": "2000-12-01",
+    "retirement_age": 65,
+    "initial_monthly_salary": 20000,
+    "employee_contribution_rate": 0.05,
+    "employer_contribution_rate": 0.05,
+    "relevant_income_cap_monthly": 30000,
+    "withdrawal_rate_annual": 0.04,
+    "forward_return_annual": 0.04,
+    "fund_expense_ratio_annual": 0.01
+  },
+  "participants": {
+    "peter": {
+      "start_age": 20,
+      "fund": "global"
+    },
+    "mary": {
+      "start_age": 40,
+      "fund": "hong_kong"
+    }
+  },
+  "oala_2025_26": {
+    "normal_monthly": 2065,
+    "higher_monthly": 4185,
+    "asset_limit_single_higher": 401000,
+    "asset_limit_single_normal": 401000,
+    "income_limit_single_higher": 10700,
+    "income_limit_single_normal": 10700,
+    "old_age_allowance_70_plus_monthly": 1500,
+    "notes": "OALA asset/income limits from SWD 2025/26; MPF not yet withdrawn may count toward assets depending on eligibility timing."
+  },
+  "target_replacement_ratios": [0.6, 0.7]
+}

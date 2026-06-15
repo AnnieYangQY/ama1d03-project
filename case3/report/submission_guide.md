@@ -1,0 +1,40 @@
+# Case III Submission Guide
+
+## Completed Deliverables
+
+| Item | Location | Status |
+|------|----------|--------|
+| Python pipeline | `case3/main.py` | Done |
+| Simulation results | `case3/output/*.csv` | Done |
+| Figures (4) | `case3/output/fig1–fig4.png` | Done |
+| Assumptions doc | `case3/data/assumptions.md` | Done |
+| Report draft (a)(b)(c) | `case3/report/case3_report.md` | Done |
+| Video script | `case3/report/video_script.md` | Done |
+| Cross-validation | `case3/src/validate.py` | Passed |
+
+## Remaining Manual Steps
+
+1. **Format report for submission**
+   - Copy `case3/report/case3_report.md` into Word/Google Docs
+   - Font: Times New Roman 12pt; margins 1"; line spacing 1.0
+   - Insert figures from `case3/output/`
+   - Ensure body is 6–12 pages (cover and appendix excluded)
+   - Add cover page and appendix (code summary, contribution statement if group)
+
+2. **Record video (≤10 min)**
+   - Follow `case3/report/video_script.md`
+   - Show at least: baseline table, fig1, fig3, fig4
+
+3. **Blackboard upload**
+   - PDF report + video file
+   - Due: 5 July 2026, 23:59
+
+4. **Turnitin**
+   - Submit report PDF through Turnitin before final Blackboard upload
+
+## Key Numbers for Presentation
+
+- Peter: HK$4.86M balance, 35% RR, needs HK$1,703/month TVC for 60%
+- Mary: HK$1.03M balance, 11% RR, needs HK$10,482/month TVC for 60%
+- Start age effect (20 vs 40, global): 35% vs 21.3% RR
+- Fund swap effect for Mary: 11% → 21.3% RR (still below Peter)

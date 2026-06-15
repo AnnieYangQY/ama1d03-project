@@ -1,0 +1,9 @@
+{
+  "cpi_months": 541,
+  "hong_kong_months": 221,
+  "global_months": 219,
+  "hong_kong_ticker": "2800.HK",
+  "global_ticker": "ACWI",
+  "cpi_source": "C&SD Composite CPI YoY (annual), converted to monthly",
+  "note": "ACWI used as Global Fund proxy; 2800.HK as Hong Kong Fund proxy."
+}

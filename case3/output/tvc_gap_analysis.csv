@@ -1,0 +1,5 @@
+name,target_replacement_ratio_pct,current_replacement_ratio_pct,required_extra_monthly_contribution,achievable,balance_with_extra,replacement_ratio_with_extra_pct
+Peter,60.0,35.0,1703.0,True,8327345.0,60.0
+Peter,70.0,35.0,2384.0,True,9715236.0,70.0
+Mary,60.0,11.0,10482.0,True,5611610.0,60.0
+Mary,70.0,11.0,12623.0,True,6546879.0,70.0
