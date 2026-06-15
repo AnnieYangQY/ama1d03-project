@@ -111,6 +111,11 @@ def tvc_gap_analysis(cfg: SimulationConfig) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def _oala_eligible(final_balance: float, oala_cfg: dict) -> bool:
+    """MPF balance not yet withdrawn counts toward OALA asset test (SWD 2025/26)."""
+    return final_balance <= oala_cfg["asset_limit_single_higher"]
+
+
 def retirement_income_breakdown(cfg: SimulationConfig) -> pd.DataFrame:
     assumptions = json.loads((DATA_DIR / "assumptions.json").read_text())
     oala = assumptions["oala_2025_26"]
@@ -119,26 +124,76 @@ def retirement_income_breakdown(cfg: SimulationConfig) -> pd.DataFrame:
     for p in load_participants():
         base = simulate_participant(p, cfg)
         mpf_monthly = base.annual_retirement_income / 12
+        eligible = _oala_eligible(base.final_balance, oala)
 
         for scenario, oala_monthly in [
-            ("no_oala", 0),
-            ("oala_normal", oala["normal_monthly"]),
-            ("oala_higher", oala["higher_monthly"]),
+            ("actual", 0),
+            ("hypothetical_normal", oala["normal_monthly"]),
+            ("hypothetical_higher", oala["higher_monthly"]),
         ]:
-            total_monthly = mpf_monthly + oala_monthly
+            if scenario == "actual":
+                applied_oala = 0
+            elif eligible:
+                applied_oala = oala_monthly
+            else:
+                applied_oala = 0
+
+            total_monthly = mpf_monthly + applied_oala
             rows.append(
                 {
                     "name": p.name,
                     "scenario": scenario,
+                    "mpf_balance": round(base.final_balance, 0),
+                    "oala_eligible": eligible,
                     "mpf_monthly": round(mpf_monthly, 0),
-                    "oala_monthly": oala_monthly,
-                    "total_monthly": round(total_monthly, 0),
+                    "oala_monthly": applied_oala if scenario == "actual" else oala_monthly,
+                    "oala_applied": applied_oala,
+                    "total_monthly": round(total_monthly if scenario == "actual" else mpf_monthly + oala_monthly, 0),
                     "final_monthly_salary": round(base.final_annual_salary / 12, 0),
                     "combined_replacement_ratio_pct": round(
-                        (total_monthly * 12) / base.final_annual_salary * 100, 1
+                        (
+                            (total_monthly if scenario == "actual" else mpf_monthly + oala_monthly)
+                            * 12
+                        )
+                        / base.final_annual_salary
+                        * 100,
+                        1,
                     ),
                 }
             )
+    return pd.DataFrame(rows)
+
+
+def delayed_retirement_sensitivity(
+    cfg: SimulationConfig, retirement_ages: list[int] | None = None
+) -> pd.DataFrame:
+    """Mary-only sensitivity: extra contribution years before withdrawal."""
+    retirement_ages = retirement_ages or [65, 67, 70]
+    rows = []
+    mary = Participant(name="Mary", start_age=40, fund="hong_kong")
+    for age in retirement_ages:
+        age_cfg = SimulationConfig(
+            start_date=cfg.start_date,
+            retirement_age=age,
+            initial_monthly_salary=cfg.initial_monthly_salary,
+            employee_contribution_rate=cfg.employee_contribution_rate,
+            employer_contribution_rate=cfg.employer_contribution_rate,
+            relevant_income_cap_monthly=cfg.relevant_income_cap_monthly,
+            withdrawal_rate_annual=cfg.withdrawal_rate_annual,
+            forward_return_annual=cfg.forward_return_annual,
+            fund_expense_ratio_annual=cfg.fund_expense_ratio_annual,
+        )
+        r = simulate_participant(mary, age_cfg)
+        rows.append(
+            {
+                "name": mary.name,
+                "retirement_age": age,
+                "contribution_years": round(r.contribution_years, 1),
+                "final_balance": round(r.final_balance, 0),
+                "monthly_retirement_income": round(r.annual_retirement_income / 12, 0),
+                "replacement_ratio_pct": round(r.replacement_ratio * 100, 1),
+            }
+        )
     return pd.DataFrame(rows)
 
 
@@ -169,6 +224,7 @@ def run_all(cfg: SimulationConfig | None = None) -> dict[str, pd.DataFrame]:
         "start_age_sensitivity": start_age_sensitivity(cfg),
         "tvc_gap_analysis": tvc_gap_analysis(cfg),
         "retirement_income_breakdown": retirement_income_breakdown(cfg),
+        "delayed_retirement_sensitivity": delayed_retirement_sensitivity(cfg),
         "tvc_marginal_effect": tvc_marginal_effect(cfg),
     }
 

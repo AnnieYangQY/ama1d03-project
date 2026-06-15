@@ -38,20 +38,19 @@ def plot_balance_over_age(cfg: SimulationConfig) -> None:
 
 def plot_income_breakdown(tables: dict[str, pd.DataFrame]) -> None:
     df = tables["retirement_income_breakdown"]
-    focus = df[df["scenario"] == "oala_normal"].copy()
+    focus = df[df["scenario"] == "actual"].copy()
     labels = focus["name"].tolist()
     mpf = focus["mpf_monthly"].tolist()
-    oala = focus["oala_monthly"].tolist()
     x = range(len(labels))
     width = 0.5
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.bar(x, mpf, width, label="MPF (4% withdrawal)")
-    ax.bar(x, oala, width, bottom=mpf, label="OALA (Normal)")
+    ax.bar(x, mpf, width, label="MPF (4% withdrawal)", color="#1f77b4")
     ax.set_xticks(list(x))
     ax.set_xticklabels(labels)
-    ax.set_ylabel("Monthly Retirement Income (HK$)")
-    ax.set_title("Retirement Income Composition (MPF + OALA Normal)")
+    ax.set_ylabel("Monthly Income (HK$)")
+    ax.set_xlabel("Member")
+    ax.set_title("Actual Retirement Income (MPF Only; OALA Ineligible)")
     ax.legend()
     _save(fig, "fig2_income_breakdown.png")
 

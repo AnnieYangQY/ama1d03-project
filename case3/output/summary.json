@@ -74,10 +74,10 @@
       "name": "Peter",
       "assigned_fund": "global",
       "balance_assigned": 4996362.0,
-      "balance_swapped": 2427886.0,
+      "balance_swapped": 2430492.0,
       "rr_assigned_pct": 36.0,
       "rr_swapped_pct": 17.5,
-      "fund_effect": -2568475.0
+      "fund_effect": -2565870.0
     },
     {
       "name": "Mary",
@@ -86,7 +86,7 @@
       "balance_swapped": 2063587.0,
       "rr_assigned_pct": 9.1,
       "rr_swapped_pct": 22.1,
-      "fund_effect": 1212725.0
+      "fund_effect": 1212726.0
     }
   ]
 }
